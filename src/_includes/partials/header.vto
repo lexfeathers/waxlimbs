@@ -1,0 +1,25 @@
+<header>
+    <a href="/">
+        {{ if site.logo }}
+            <div id="logo"></div>
+        {{ else }}
+            <h1 id="logo">{{ site.title }}</h1>
+        {{ /if }}
+    </a>
+
+    <hr class="desktop-only">
+
+    <nav id="nav">
+        <div class="links">
+            <a href="/">/</a>
+            {{ for page of search.pages("type=page", "order=desc") }}
+                <a href="{{ page.url |> url }}">{{ page.title |> toUpperCase() }}</a>
+            {{ /for }}
+        </div>
+    </nav>
+
+    <div class="sidebar-footer">
+        {{ include "partials/copyright.vto" }}
+        
+    </div>
+</header>

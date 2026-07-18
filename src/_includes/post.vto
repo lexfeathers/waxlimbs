@@ -1,0 +1,19 @@
+---
+layout: layout.vto
+---
+<div class="post-heading">
+    <h1>{{ title }}</h1>
+    <p class="author font-small">by {{ author }} on {{ date |> date("HUMAN_DATE")}}</p>
+
+    {{ if tags }}
+        <span class="font-small">Tags:</span>
+        {{ for tag of tags }}
+            <span class="tag font-small">{{ tag }}</span>
+        {{ /for }}
+    {{ /if }}
+    <hr>
+</div>
+
+<article>
+    {{ content |> safe }}
+</article>
