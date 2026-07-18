@@ -5,7 +5,6 @@ title: posts
 <div class="blog-list">
     {{ for post of search.pages("type=post", "order=desc") }}
         <p>
-            &ClockwiseContourIntegral; 
             <a href="{{ post.url }}" class="blog-list__post">{{ post.title }}</a> // {{ post.date |> date("HUMAN_DATE") }}
         </p>
     {{ /for }}
