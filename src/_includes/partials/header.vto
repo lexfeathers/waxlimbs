@@ -1,7 +1,7 @@
 <header>
     <a href="/">
         {{ if site.logo }}
-            <div id="logo"></div>
+            <div id="logo" title="{{ site.title }} homepage"></div>
         {{ else }}
             <h1 id="logo">{{ site.title }}</h1>
         {{ /if }}
@@ -11,8 +11,9 @@
 
     <nav id="nav">
         <div class="links">
-            <a href="/">/</a>
-            {{ for page of search.pages("type=page", "order=desc") }}
+            <a href="/" title="home">HOME</a>
+            <a href="https://shop.waxlimbs.com">MERCH</a>
+            {{ for page of search.pages("type=page", "order=asc") }}
                 <a href="{{ page.url |> url }}">{{ page.title |> toUpperCase() }}</a>
             {{ /for }}
         </div>
@@ -20,6 +21,5 @@
 
     <div class="sidebar-footer">
         {{ include "partials/copyright.vto" }}
-        
     </div>
 </header>

@@ -1,30 +1,9 @@
 @font-face {
-    font-family: "Adelphe Trouble Floreal Regular";
-    font-style: normal;
-    font-weight: lighter;
-    src: 
-        url(fonts/Adelphe-Trouble-FlorealRegular.woff) format("woff"),
-        url(fonts/Adelphe-Trouble-FlorealRegular.woff2) format("woff2");
+    font-family: Dogica;
+    src: url(fonts/dogica.otf);
 }
 
 @font-face {
-    font-family: "Adelphe Trouble Germinal Regular";
-    font-style: normal;
-    font-weight: lighter;
-    src: 
-        url(fonts/Adelphe-Trouble-GerminalRegular.woff) format("woff"),
-        url(fonts/Adelphe-Trouble-GerminalRegular.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Atkinson Hyperlegible";
-    font-weight: 200;
-    font-style: normal;
-    src: url(fonts/AtkinsonHyperlegible-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Atkinson Hyperlegible Bold";
-    font-style: bold;
-    src: url(fonts/AtkinsonHyperlegible-Bold.ttf);
+    font-family: Playfair;
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
 }

@@ -12,7 +12,7 @@
 
         <main>
             <section class="main-content">
-                <h1>{{ title |> charAt(0).toUpperCase() + title.slice(1) }}</h1>
+                <h1 class="page-title">{{ title |> charAt(0).toUpperCase() + title.slice(1) }}</h1>
                 {{ content |> safe }}
             </section>
 
@@ -31,5 +31,6 @@
             --logo_width: {{ site.logo_width }}px;
         }
     </style>
+    <script src="/assets/scripts/global.js"></script>
 </body>
 </html>

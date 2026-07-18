@@ -7,6 +7,7 @@ import metas from "lume/plugins/metas.ts";
 import feed from "lume/plugins/feed.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import date from "lume/plugins/date.ts";
+import extractOrder from "lume/plugins/extract_order.ts";
 
 const site = lume({
     src: "./src",
@@ -22,6 +23,7 @@ site.use(metas());
 site.use(feed());
 site.use(sitemap());
 site.use(date());
+site.use(extractOrder());
 
 site.add("/assets");
 
