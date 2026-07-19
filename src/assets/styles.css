@@ -1,4 +1,5 @@
-@import url(fonts.css);
+@import url(./fonts.css);
+@import url(./lightbox.css);
 
 :root {
 	/* Global variables */
@@ -142,6 +143,10 @@ hr {
 
 :focus {
 	outline: none;
+}
+
+figure {
+	margin: calc(var(--spacing) * 6) 0;
 }
 
 img {
