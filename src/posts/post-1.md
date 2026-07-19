@@ -2,13 +2,14 @@
 title: first post
 author: lex
 date: 2026-01-03
-tags: [
-    "Demo",
-    "Test"
-]
+tags: ['Demo', 'Test']
+cover: /uploads/20251018-Waxlimbs-Handlebar-13.jpg
 ---
 
 Esse aliquip sunt minim culpa. Laborum id duis excepteur mollit consectetur magna velit mollit. Cupidatat dolore sunt enim laboris aute aliqua culpa culpa consequat. Cupidatat fugiat veniam commodo occaecat enim consequat deserunt fugiat in sit ullamco adipisicing.
+
+![alt text](/uploads/20251018-Waxlimbs-Handlebar-13.jpg 'Lex and Liv, baybeeeee')
+Photo by Emily Thuro
 
 Labore dolor ad voluptate qui ad culpa velit cillum irure dolore et. Id magna nostrud consequat esse ullamco duis sit tempor eiusmod. Deserunt fugiat fugiat laboris mollit incididunt enim voluptate exercitation. Tempor eu eiusmod sit cillum nostrud eu irure aliquip occaecat mollit commodo labore proident. Veniam voluptate ad qui irure aute minim sunt qui reprehenderit labore aliquip quis dolore consequat. Voluptate proident quis proident quis dolore ad tempor.
 

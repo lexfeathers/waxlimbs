@@ -35,12 +35,6 @@
 
 	/* Shadows */
 	--shadow: 0px 4px 8px var(var(--color-background-darker));
-
-	@media screen and (prefers-color-scheme: light) {
-	}
-
-	@media screen and (prefers-color-scheme: dark) {
-	}
 }
 
 * {
@@ -153,6 +147,7 @@ hr {
 
 img {
 	width: 100%;
+	border-radius: var(--spacing);
 }
 
 ul {
@@ -232,18 +227,21 @@ h6 {
 			line-height: calc(var(--spacing) * 10);
 			padding-left: calc(var(--spacing) * 2);
 
+			@media screen and (max-width: 749px) {
+				padding-left: calc(var(--spacing) * 4);
+			}
+
 			&::before {
 				content: '/';
 				margin-right: var(--spacing);
 
 				@media screen and (max-width: 749px) {
-					content: '';
+					content: none;
 				}
 			}
 
 			&:hover,
 			&:focus {
-				padding-left: calc(var(--spacing) * 3);
 				background: linear-gradient(
 					111deg,
 					var(--color-secondary) 88%,
@@ -300,6 +298,7 @@ main {
 
 	@media screen and (max-width: 749px) {
 		margin-left: 0;
+		margin-right: unset;
 		padding-left: unset;
 		margin-top: calc(var(--spacing) * 4);
 	}
@@ -320,10 +319,22 @@ main {
 }
 
 .blog-list p {
+	display: flex;
+	gap: calc(var(--spacing) * 4);
 	line-height: calc(var(--spacing) * 12);
 	border: 1px solid var(--color-primary-faint);
 	padding-left: calc(var(--spacing) * 2);
 	border-radius: var(--radius);
+
+	@media screen and (max-width: 749px) {
+		flex-wrap: wrap;
+		gap: 0;
+
+		a {
+			margin-right: calc(var(--spacing) * 2);
+		}
+	}
+
 	a {
 		transition: 0.1s;
 		text-decoration: none;
@@ -440,6 +451,7 @@ a {
 		outline: none;
 		background-color: var(--color-secondary);
 		color: var(--color-background);
+		font-family: 'Source Code Pro';
 		font-weight: bold;
 	}
 }

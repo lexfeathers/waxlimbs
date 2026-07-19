@@ -22,7 +22,7 @@ site.use(esbuild());
 site.use(slugify_urls());
 site.use(
 	favicon({
-		input: '/assets/icons/Mask_White.svg',
+		input: '/assets/icons/Mask_White_Stroke_Thicker_Favicon.svg',
 	})
 );
 site.use(metas());
@@ -54,5 +54,6 @@ site.use(date());
 site.use(extractOrder());
 
 site.add('/assets');
+site.add('/uploads');
 
 export default site;
