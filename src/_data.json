@@ -36,7 +36,7 @@
 	},
 	"metas": {
 		"site": "Waxlimbs",
-		"icon": "/assets/icons/Mask_Black.svg",
+		"icon": "assets/icons/Mask_White.svg",
 		"fediverse": "https://mastodon.social/@waxlimbs",
 		"lang": "en",
 		"generator": true,
