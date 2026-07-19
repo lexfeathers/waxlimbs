@@ -1,9 +1,48 @@
 @font-face {
-    font-family: Dogica;
-    src: url(fonts/dogica.otf);
+	font-family: Dogica;
+	src: url(fonts/dogica.otf);
 }
 
 @font-face {
-    font-family: Playfair;
-    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+	font-family: Playfair;
+	src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+	font-family: Source Code Pro;
+	src: url(fonts/SourceCodePro-VariableFont_wght.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Source Code Pro Light;
+	src: url(fonts/SourceCodePro-VariableFont_wght.ttf);
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: Source Code Pro Extra-light;
+	src: url(fonts/SourceCodePro-VariableFont_wght.ttf);
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: Source Code Pro Italic;
+	src: url(fonts/SourceCodePro-Italic-VariableFont_wght.ttf);
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Source Code Pro Italic Extra-light;
+	src: url(fonts/SourceCodePro-Italic-VariableFont_wght.ttf);
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Source Code Pro Bold;
+	src: url(fonts/SourceCodePro-VariableFont_wght.ttf);
+	font-weight: bold;
+	font-style: bold;
 }

@@ -1,25 +1,21 @@
 {
-    "layout" : "layout.vto",
-    "site" : {
-        "title" : "Waxlimbs",
-        "description" : "Alien music.",
-        "logo" : "assets/icons/Mask_Stroke_Thicker_White.svg",
-        "logo_width" : "160"
-    },
-    "metas" : {
-        "site" : "Waxlimbs",
-        "icon" : "assets/icons/Mask_Black.svg",
-        "fediverse" : "https://mastodon.social/@waxlimbs",
-        "lang" : "en",
-        "generator" : true,
-        "title" : "=title",
-        "image" : "$ img.cover attr(src)",
-        "color" : ["white", "black"],
-        "keywords" : [
-            "band",
-            "music",
-            "toronto",
-            "waxlimbs"
-        ]
-    }
+	"layout": "layout.vto",
+	"site": {
+		"title": "Waxlimbs",
+		"description": "Alien music.",
+		"logo": "assets/icons/Mask_Stroke_Thicker_White.svg",
+		"logo_mobile": "assets/icons/Mask_Stroke_Thickest_White.svg",
+		"logo_width": "160px"
+	},
+	"metas": {
+		"site": "Waxlimbs",
+		"icon": "assets/icons/Mask_Black.svg",
+		"fediverse": "https://mastodon.social/@waxlimbs",
+		"lang": "en",
+		"generator": true,
+		"title": "=title",
+		"image": "$ img.cover attr(src)",
+		"color": ["white", "black"],
+		"keywords": ["band", "music", "toronto", "waxlimbs"]
+	}
 }

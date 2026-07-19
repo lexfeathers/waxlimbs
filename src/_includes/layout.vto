@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" type="application/rss+xml" title="Waxlimbs" href="/feed.rss">
     <link rel="stylesheet" href="/assets/styles.css">
     <title>{{ site.title }} - {{ title }}</title>
 </head>
@@ -12,7 +13,7 @@
 
         <main>
             <section class="main-content">
-                <h1 class="page-title">{{ title |> charAt(0).toUpperCase() + title.slice(1) }}</h1>
+                <h1 class="page-title">{{ title |> toUpperCase() }}</h1>
                 {{ content |> safe }}
             </section>
 
@@ -27,8 +28,13 @@
 
     <style>
         :root {
-            --logo: url(/assets/icons/Mask_Stroke_Thicker_White.svg);
-            --logo_width: {{ site.logo_width }}px;
+            --logo: url({{ site.logo |> url }});
+            --logo_mobile: url({{ site.logo_mobile |> url }});
+            --logo_width: {{ site.logo_width }};
+
+            /* Icons */
+            --icon-menu: url({{ "list" |> icon("phosphor")}});
+            --icon-close: url({{ "x" |> icon("phosphor") }});
         }
     </style>
     <script src="/assets/scripts/global.js"></script>

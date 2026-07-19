@@ -1,0 +1,11 @@
+---
+title: entries
+---
+
+<div class="blog-list">
+    {{ for post of search.pages("type=post", "order=desc") }}
+        <p>
+            <a href="{{ post.url }}" class="blog-list__post">{{ post.title |> toUpperCase() }}</a> // {{ post.date |> date("HUMAN_DATE") |> toUpperCase() }}
+        </p>
+    {{ /for }}
+</div>
