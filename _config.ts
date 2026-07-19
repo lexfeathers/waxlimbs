@@ -8,9 +8,11 @@ import feed from 'lume/plugins/feed.ts';
 import sitemap from 'lume/plugins/sitemap.ts';
 import date from 'lume/plugins/date.ts';
 import extractOrder from 'lume/plugins/extract_order.ts';
+import basePath from 'lume/plugins/base_path.ts';
 
 const site = lume({
 	src: './src',
+	location: new URL('https://lexfeathers.github.io/waxlimbs'),
 });
 
 site.use(
@@ -52,6 +54,7 @@ site.use(
 site.use(sitemap());
 site.use(date());
 site.use(extractOrder());
+site.use(basePath());
 
 site.add('/assets');
 site.add('/uploads');
