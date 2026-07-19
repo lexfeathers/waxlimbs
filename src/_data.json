@@ -1,6 +1,7 @@
 {
 	"layout": "layout.vto",
 	"cover": "/uploads/20251018-Waxlimbs-Handlebar-13.jpg",
+	"description": "Alien music.",
 	"site": {
 		"title": "Waxlimbs",
 		"description": "Alien music.",
@@ -39,6 +40,7 @@
 		"icon": "assets/icons/Mask_White.svg",
 		"fediverse": "https://mastodon.social/@waxlimbs",
 		"lang": "en",
+		"description": "=description",
 		"generator": true,
 		"title": "=title",
 		"image": "=cover",
