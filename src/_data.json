@@ -1,5 +1,6 @@
 {
 	"layout": "layout.vto",
+	"cover": "/uploads/20251018-Waxlimbs-Handlebar-13.jpg",
 	"site": {
 		"title": "Waxlimbs",
 		"description": "Alien music.",
@@ -35,13 +36,13 @@
 	},
 	"metas": {
 		"site": "Waxlimbs",
-		"icon": "assets/icons/Mask_Black.svg",
+		"icon": "/assets/icons/Mask_Black.svg",
 		"fediverse": "https://mastodon.social/@waxlimbs",
 		"lang": "en",
 		"generator": true,
 		"title": "=title",
 		"image": "$ img.cover attr(src)",
-		"color": ["white", "black"],
+		"color": "#141414",
 		"keywords": ["band", "music", "toronto", "waxlimbs"]
 	}
 }
