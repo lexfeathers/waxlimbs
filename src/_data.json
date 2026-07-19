@@ -41,7 +41,7 @@
 		"lang": "en",
 		"generator": true,
 		"title": "=title",
-		"image": "$ img.cover attr(src)",
+		"image": "=cover",
 		"color": "#141414",
 		"keywords": ["band", "music", "toronto", "waxlimbs"]
 	}
