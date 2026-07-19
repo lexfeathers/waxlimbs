@@ -225,7 +225,7 @@ h6 {
 
 		a {
 			text-decoration: none;
-			transition-property: padding-left letter-spacing;
+			transition-property: letter-spacing;
 			transition-duration: 0.1s;
 			line-height: calc(var(--spacing) * 10);
 			padding-left: calc(var(--spacing) * 2);
@@ -237,6 +237,7 @@ h6 {
 			&::before {
 				content: '/';
 				margin-right: var(--spacing);
+				transition: 0.1s;
 
 				@media screen and (max-width: 749px) {
 					content: none;
@@ -255,6 +256,10 @@ h6 {
 				color: var(--color-background);
 				font-family: 'Source Code Pro';
 				letter-spacing: calc(var(--spacing) / 2);
+
+				&::before {
+					margin-right: calc(var(--spacing) * 2);
+				}
 
 				&::after {
 					color: var(--color-background);
