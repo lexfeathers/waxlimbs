@@ -1,3 +1,5 @@
+import './lightbox.ts';
+
 markExternalLinks();
 
 function markExternalLinks() {

@@ -20,7 +20,7 @@
 
 		<div id="main-menu">
             <a href="/" title="home">HOME</a>
-            <a href="https://shop.waxlimbs.com" target="_blank">MERCH</a>
+            <a href="https://shop.waxlimbs.com" target="_blank" title="Our standalone merch store">MERCH</a>
             {{ for page of search.pages("type=page", "order=asc") }}
                 <a href="{{ page.url |> url }}">{{ page.title |> toUpperCase() }}</a>
             {{ /for }}
