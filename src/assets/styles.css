@@ -67,18 +67,18 @@ html {
 }
 
 .desktop-only {
-	@media screen and (max-width: 749px) {
+	@media (width <= 749px) {
 		display: none;
 	}
-	@media screen and (min-width: 750px) {
+	@media (width >= 750px) {
 		display: flex;
 	}
 }
 .mobile-only {
-	@media screen and (max-width: 749px) {
+	@media (width <= 749px) {
 		display: flex;
 	}
-	@media screen and (min-width: 750px) {
+	@media (width >= 750px) {
 		display: none;
 	}
 }
@@ -127,7 +127,7 @@ header {
 	border-right: 1px solid var(--color-primary-faint);
 	padding-right: calc(var(--spacing) * 4);
 
-	@media screen and (max-width: 749px) {
+	@media (width <= 749px) {
 		flex-direction: row;
 		gap: calc(var(--spacing) * 8);
 		align-items: flex-start;
@@ -235,7 +235,7 @@ iframe[src*='bandcamp.com'] {
 iframe[src*='bandcamp.com'] {
 	width: 80%;
 
-	@media screen and (max-width: 749px) {
+	@media (width <= 749px) {
 		width: 100%;
 	}
 }
@@ -243,7 +243,7 @@ iframe[src*='bandcamp.com'] {
 #logo {
 	mask: var(--logo);
 
-	@media screen and (max-width: 749px) {
+	@media (width <= 749px) {
 		mask: var(--logo_mobile);
 	}
 
@@ -260,7 +260,7 @@ iframe[src*='bandcamp.com'] {
 		background-color: var(--color-tertiary);
 	}
 
-	@media screen and (max-width: 749px) {
+	@media (width <= 749px) {
 		width: calc(var(--logo_width) / 2);
 		height: calc(var(--logo_width) / 2);
 		vertical-align: middle;
@@ -277,12 +277,12 @@ iframe[src*='bandcamp.com'] {
 		flex-direction: column;
 		row-gap: calc(var(--spacing) * 2);
 
-		@media screen and (max-width: 749px) {
+		@media (width <= 749px) {
 			align-items: flex-end;
 			column-gap: calc(var(--spacing) * 2);
 		}
 
-		@media screen and (min-width: 750px) {
+		@media (width >= 750px) {
 			display: flex;
 		}
 
@@ -293,7 +293,7 @@ iframe[src*='bandcamp.com'] {
 			line-height: calc(var(--spacing) * 10);
 			padding-left: calc(var(--spacing) * 2);
 
-			@media screen and (max-width: 749px) {
+			@media (width <= 749px) {
 				padding-left: calc(var(--spacing) * 4);
 			}
 
@@ -302,7 +302,7 @@ iframe[src*='bandcamp.com'] {
 				margin-right: var(--spacing);
 				transition: 0.1s;
 
-				@media screen and (max-width: 749px) {
+				@media (width <= 749px) {
 					content: none;
 				}
 			}
@@ -328,8 +328,7 @@ iframe[src*='bandcamp.com'] {
 					color: var(--color-background);
 				}
 
-				@media screen and (max-width: 749px) {
-					/* padding-left: unset; */
+				@media (width <= 749px) {
 					padding-right: calc(var(--spacing) * 6);
 					width: 100%;
 					text-align: left;
@@ -367,7 +366,7 @@ main {
 	margin-right: calc(var(--spacing) * 8);
 	padding-left: calc(var(--spacing) * 4);
 
-	@media screen and (max-width: 749px) {
+	@media (width <= 749px) {
 		margin-left: 0;
 		margin-right: unset;
 		padding-left: unset;
@@ -384,7 +383,7 @@ main {
 .page-title {
 	letter-spacing: var(--spacing);
 
-	@media screen and (min-width: 750px) {
+	@media (width >= 750px) {
 		letter-spacing: calc(var(--spacing) * 3);
 	}
 }
@@ -397,7 +396,7 @@ main {
 	padding-left: calc(var(--spacing) * 2);
 	border-radius: var(--radius);
 
-	@media screen and (max-width: 749px) {
+	@media (width <= 749px) {
 		flex-wrap: wrap;
 		gap: 0;
 
@@ -536,7 +535,7 @@ a {
 	padding-top: calc(var(--spacing) * 4);
 	margin-top: auto;
 
-	@media screen and (max-width: 749px) {
+	@media (width <= 749px) {
 		display: none;
 	}
 }
@@ -599,7 +598,7 @@ footer {
 	content: ', ';
 }
 
-@media screen and (max-width: 749px) {
+@media (width <= 749px) {
 	#main-container {
 		flex-direction: column;
 	}
