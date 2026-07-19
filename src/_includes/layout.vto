@@ -14,7 +14,13 @@
 
         <main id="main"> 
             <section class="main-content">
-                <h1 class="page-title">{{ title |> toUpperCase() }}</h1>
+                <h1 class="page-title">
+                    {{ if title == "home" }}
+                        {{ site.title |> toUpperCase() }}
+                    {{ else }}
+                        {{ title |> toUpperCase() }}
+                    {{ /if }}
+                </h1>
                 {{ content |> safe }}
             </section>
 

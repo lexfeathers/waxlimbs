@@ -37,12 +37,12 @@
 	},
 	"metas": {
 		"site": "Waxlimbs",
+		"title": "$ .page-title || =title || Waxlimbs",
 		"icon": "assets/icons/Mask_White.svg",
 		"fediverse": "https://mastodon.social/@waxlimbs",
 		"lang": "en",
 		"description": "=description",
 		"generator": true,
-		"title": "=title",
 		"image": "=cover",
 		"color": "#141414",
 		"keywords": ["band", "music", "toronto", "waxlimbs"]
