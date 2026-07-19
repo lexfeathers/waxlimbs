@@ -613,3 +613,13 @@ footer {
 		height: unset;
 	}
 }
+
+/* Handle Paul's fuckass ultra-wide monitor */
+@media (width >= 2000px) {
+	body {
+		align-items: center;
+	}
+	#main-container {
+		margin-right: unset;
+	}
+}
