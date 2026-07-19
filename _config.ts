@@ -11,18 +11,11 @@ import extractOrder from 'lume/plugins/extract_order.ts';
 import basePath from 'lume/plugins/base_path.ts';
 import footnote from 'npm:markdown-it-footnote@latest';
 import implicitFigures from 'npm:markdown-it-image-figures@latest';
-import { alert } from 'npm:@mdit/plugin-alert@latest';
 
 // Pass options to markdown-it plugins
 const markdown = {
 	plugins: [
 		footnote,
-		[
-			alert,
-			{
-				deep: true,
-			},
-		],
 		[
 			implicitFigures,
 			{

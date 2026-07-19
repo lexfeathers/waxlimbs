@@ -20,6 +20,7 @@
 		var(--color-secondary),
 		var(--color-background) 20%
 	);
+	--translucent: 0.5;
 
 	/* Fonts */
 	--font-small: 1rem;
@@ -180,6 +181,22 @@ h4,
 h5,
 h6 {
 	font-family: 'Source Code Pro', 'Helvetica', sans-serif;
+}
+
+/* Footnotes */
+.footnote-ref a {
+	text-decoration: none;
+}
+
+.footnotes-sep {
+	opacity: var(--translucent);
+}
+
+.footnotes {
+	&::before {
+		content: 'Footnotes:';
+		color: var(--color-primary-faint);
+	}
 }
 
 iframe[title='YouTube video player'],

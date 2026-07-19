@@ -6,7 +6,7 @@ tags: ['Demo', 'Test']
 cover: /uploads/20251018-Waxlimbs-Handlebar-13.jpg
 ---
 
-Esse aliquip sunt minim culpa. Laborum id duis excepteur mollit consectetur magna velit mollit. Cupidatat dolore sunt enim laboris aute aliqua culpa culpa consequat. Cupidatat fugiat veniam commodo occaecat enim consequat deserunt fugiat in sit ullamco adipisicing.
+Esse aliquip sunt minim culpa.[^1] Laborum id duis excepteur mollit consectetur magna velit mollit. Cupidatat dolore sunt enim laboris aute aliqua culpa culpa consequat. Cupidatat fugiat veniam commodo occaecat enim consequat deserunt fugiat in sit ullamco adipisicing.
 
 ![alt text](/uploads/20251018-Waxlimbs-Handlebar-13.jpg 'Lex and Liv, baybeeeee')
 
@@ -27,3 +27,5 @@ Exercitation non commodo et in. Irure ut eiusmod quis eu ut occaecat velit velit
 Mollit consectetur mollit eiusmod dolor pariatur qui elit occaecat Lorem minim pariatur. Adipisicing ea aliqua fugiat deserunt occaecat exercitation magna nisi anim sint commodo commodo culpa. Pariatur aliquip anim sint magna eiusmod in consectetur aliqua reprehenderit amet. In enim in commodo dolor esse esse ipsum eu ex aute dolor irure amet. Elit aute nostrud pariatur aute. Nostrud non excepteur ea qui consequat velit ullamco ullamco irure sit dolor labore.
 
 Pariatur cillum mollit culpa labore duis ullamco reprehenderit ipsum in. Enim qui dolor eiusmod incididunt aute qui. Do elit duis voluptate duis do ullamco adipisicing reprehenderit ad minim esse ad exercitation. Ullamco anim ut enim officia veniam elit consequat commodo aliquip.
+
+[^1]: Hey this is a footnote
