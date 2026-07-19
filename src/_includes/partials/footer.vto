@@ -1,6 +1,11 @@
-<span class="footer-copy font-small">
-    <a href="/feed.rss">RSS</a>
-</span>
-<span class="footer-copy font-small">
+<p class="footer-copy font-small">
     Made with love, by Waxlimbs <3
-</span>
+</p>
+<div class="footer-icons">
+    {{ for item of site.socials }}
+        <a href="{{ item.link }}" title="{{ item.name }}" target="_blank">
+            <div class="{{ item.name }} social-icon"></div>
+        </a>
+    {{ /for }}
+    <a href="/feed.rss">RSS</a>
+</div>

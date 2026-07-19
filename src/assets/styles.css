@@ -88,7 +88,6 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
-	height: calc(100vh - calc(var(--spacing) * 2));
 	padding: calc(var(--spacing) * 4);
 	margin: 0;
 	gap: calc(var(--spacing) * 4);
@@ -103,7 +102,7 @@ body {
 #main-container {
 	display: flex;
 	width: 100%;
-	height: 100%;
+	flex-basis: calc(100vh - calc(var(--spacing) * 8));
 	max-width: 64rem;
 	margin-right: auto;
 }
@@ -148,6 +147,10 @@ hr {
 img {
 	width: 100%;
 	border-radius: var(--spacing);
+}
+
+blockquote {
+	font-family: 'Source Code Pro Italic Extra-light';
 }
 
 ul {
@@ -447,12 +450,16 @@ a {
 		color: var(--color-secondary-faint);
 	}
 
-	&:focus:not(:has(#logo)) {
+	&:focus-visible:not(:has(#logo)) {
 		outline: none;
 		background-color: var(--color-secondary);
 		color: var(--color-background);
 		font-family: 'Source Code Pro';
 		font-weight: bold;
+	}
+
+	&:active {
+		background-color: none;
 	}
 }
 
@@ -470,11 +477,53 @@ footer {
 	display: inline-flex;
 	flex-direction: column;
 	gap: calc(var(--spacing) * 2);
-	padding-bottom: calc(var(--spacing) * 4);
+	border-top: 1px solid var(--color-primary-faint);
+	margin-top: calc(var(--spacing) * 16);
 
 	.footer-copy,
 	.copyright {
 		color: var(--color-primary-faint);
+	}
+}
+
+.footer-icons {
+	display: flex;
+	justify-content: flex-start;
+	gap: calc(var(--spacing) * 4);
+	flex-wrap: wrap;
+
+	a::after {
+		content: none;
+	}
+
+	a:focus-visible {
+		background-color: unset !important;
+		color: var(--color-tertiary) !important;
+		font-family: unset !important;
+	}
+
+	a:has(.social-icon) {
+		&:hover,
+		&:focus-visible {
+			background-color: unset !important;
+		}
+	}
+
+	.social-icon {
+		width: calc(var(--spacing) * 7);
+		aspect-ratio: 1/1;
+		mask-repeat: no-repeat;
+		mask-position: center;
+		background-color: var(--color-secondary);
+		transition: 0.1s;
+
+		&:hover {
+			background-color: var(--color-secondary-faint);
+		}
+
+		&:is(a:focus-visible .social-icon) {
+			background-color: var(--color-tertiary);
+		}
 	}
 }
 

@@ -5,7 +5,33 @@
 		"description": "Alien music.",
 		"logo": "assets/icons/Mask_Stroke_Thicker_White.svg",
 		"logo_mobile": "assets/icons/Mask_Stroke_Thickest_White.svg",
-		"logo_width": "160px"
+		"logo_width": "160px",
+		"socials": [
+			{
+				"name": "Instagram",
+				"link": "https://instagram.com/waxlimbs"
+			},
+			{
+				"name": "YouTube",
+				"link": "https://youtube.com/waxlimbs"
+			},
+			{
+				"name": "Bsky",
+				"link": "https://bsky.app/profile/waxlimbs.com"
+			},
+			{
+				"name": "Mastodon",
+				"link": "https://mastodon.social/@waxlimbs"
+			},
+			{
+				"name": "Tiktok",
+				"link": "https://www.tiktok.com/@waxlimbs"
+			},
+			{
+				"name": "Bandcamp",
+				"link": "https://waxlimbs.bandcamp.com"
+			}
+		]
 	},
 	"metas": {
 		"site": "Waxlimbs",

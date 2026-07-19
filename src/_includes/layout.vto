@@ -11,7 +11,7 @@
     <div id="main-container">
         {{ include "partials/header.vto" }}
 
-        <main>
+        <main id="main">
             <section class="main-content">
                 <h1 class="page-title">{{ title |> toUpperCase() }}</h1>
                 {{ content |> safe }}
@@ -31,10 +31,16 @@
             --logo: url({{ site.logo |> url }});
             --logo_mobile: url({{ site.logo_mobile |> url }});
             --logo_width: {{ site.logo_width }};
-
             /* Icons */
             --icon-menu: url({{ "list" |> icon("phosphor")}});
             --icon-close: url({{ "x" |> icon("phosphor") }});
+            /* Socials */
+            --icon-instagram: url({{ "instagram-logo:thin" |> icon("phosphor") }});
+            --icon-bsky: url({{ "butterfly:thin" |> icon("phosphor") }});
+            --icon-mastodon: url({{ "mastodon-logo:thin" |> icon("phosphor") }});
+            --icon-youtube: url({{ "youtube-logo:thin" |> icon("phosphor") }});
+            --icon-tiktok: url({{ "tiktok-logo:thin" |> icon("phosphor") }});
+            --icon-bandcamp: url({{ "parallelogram:thin" |> icon("phosphor") }});
         }
     </style>
     <script src="/assets/scripts/global.js"></script>
