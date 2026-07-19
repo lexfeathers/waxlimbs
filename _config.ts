@@ -21,7 +21,9 @@ site.use(
 	})
 );
 site.use(esbuild());
+site.use(basePath());
 site.use(slugify_urls());
+site.use(date());
 site.use(
 	favicon({
 		input: '/assets/icons/Mask_White_Stroke_Thicker_Favicon.svg',
@@ -52,9 +54,7 @@ site.use(
 	})
 );
 site.use(sitemap());
-site.use(date());
 site.use(extractOrder());
-site.use(basePath());
 
 site.add('/assets');
 site.add('/uploads');
