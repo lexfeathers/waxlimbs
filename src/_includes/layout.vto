@@ -32,15 +32,15 @@
             --logo_mobile: url({{ site.logo_mobile |> url }});
             --logo_width: {{ site.logo_width }};
             /* Icons */
-            --icon-menu: url({{ "list" |> icon("phosphor")}});
-            --icon-close: url({{ "x" |> icon("phosphor") }});
+            --icon-menu: url({{ "list" |> icon("phosphor")|> url }});
+            --icon-close: url({{ "x" |> icon("phosphor") |> url }});
             /* Socials */
-            --icon-instagram: url({{ "instagram-logo:thin" |> icon("phosphor") }});
-            --icon-bsky: url({{ "butterfly:thin" |> icon("phosphor") }});
-            --icon-mastodon: url({{ "mastodon-logo:thin" |> icon("phosphor") }});
+            --icon-instagram: url({{ "instagram-logo:thin" |> icon("phosphor") |> url }});
+            --icon-bsky: url({{ "butterfly:thin" |> icon("phosphor") |> url }});
+            --icon-mastodon: url({{ "mastodon-logo:thin" |> icon("phosphor") |> url }});
             --icon-youtube: url({{ "youtube-logo:thin" |> icon("phosphor") }});
-            --icon-tiktok: url({{ "tiktok-logo:thin" |> icon("phosphor") }});
-            --icon-bandcamp: url({{ "parallelogram:thin" |> icon("phosphor") }});
+            --icon-tiktok: url({{ "tiktok-logo:thin" |> icon("phosphor") |> url }});
+            --icon-bandcamp: url({{ "parallelogram:thin" |> icon("phosphor") |> url }});
         }
     </style>
     <script src="/assets/scripts/global.js"></script>
