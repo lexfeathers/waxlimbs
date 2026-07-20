@@ -265,6 +265,7 @@ iframe[src*='bandcamp.com'] {
 	width: 400px;
 	display: block;
 	margin: auto;
+	image-rendering: pixelated;
 
 	@media (width <= 749px) {
 		width: 60%;
