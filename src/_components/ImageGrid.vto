@@ -22,9 +22,11 @@
     <img src="{{ item.image_url }}" alt="{{ item.image_alt }}">
     <figcaption>
         {{ item.image_alt |> md }}
-        <p class="attribution">
-            {{ item.image_attribution }}
-        </p>
+        {{ if image_attribution }}
+            <p class="attribution">
+                {{ item.image_attribution }}
+            </p>
+        {{ /if }}
     </figcaption>
   </figure>
   {{ /for }}
