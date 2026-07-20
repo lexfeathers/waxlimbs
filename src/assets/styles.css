@@ -150,8 +150,9 @@ hr {
 }
 
 ::selection {
-	background-color: var(--color-secondary);
+	background-color: var(--color-secondary-faint);
 	color: var(--color-background-darker);
+	font-family: 'Source Code Pro';
 }
 
 :focus {
