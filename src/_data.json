@@ -32,6 +32,10 @@
 			{
 				"name": "Bandcamp",
 				"link": "https://waxlimbs.bandcamp.com"
+			},
+			{
+				"name": "RSS",
+				"link": "/feed.rss"
 			}
 		]
 	},

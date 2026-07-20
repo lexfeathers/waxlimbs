@@ -26,7 +26,7 @@ const socials = {
 	iconBsky: document.querySelectorAll('.Bsky'),
 	iconMastodon: document.querySelectorAll('.Mastodon'),
 	iconBandcamp: document.querySelectorAll('.Bandcamp'),
-	iconRSS: document.querySelectorAll('.rss'),
+	iconRSS: document.querySelectorAll('.RSS'),
 };
 
 // Set social icons
