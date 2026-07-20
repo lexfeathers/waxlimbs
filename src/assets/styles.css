@@ -179,10 +179,16 @@ blockquote {
 	border-left: 1px solid var(--color-secondary-faint);
 	padding-left: calc(var(--spacing) * 4);
 	margin-left: 0;
+
+	p {
+		margin: 0;
+	}
 }
 
 cite {
 	display: block;
+	font-family: 'Source Code Pro Light';
+	font-style: normal;
 	margin-top: calc(var(--spacing) * 4);
 }
 
@@ -288,7 +294,7 @@ iframe[src*='bandcamp.com'] {
 	#main-menu {
 		display: none;
 		flex-direction: column;
-		row-gap: calc(var(--spacing) * 2);
+		/* row-gap: calc(var(--spacing) * 2); */
 
 		@media (width <= 749px) {
 			align-items: flex-end;
