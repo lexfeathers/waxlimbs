@@ -26,6 +26,7 @@ const socials = {
 	iconBsky: document.querySelectorAll('.Bsky'),
 	iconMastodon: document.querySelectorAll('.Mastodon'),
 	iconBandcamp: document.querySelectorAll('.Bandcamp'),
+	iconRSS: document.querySelectorAll('.rss'),
 };
 
 // Set social icons
@@ -46,4 +47,7 @@ socials.iconMastodon.forEach((icon: Element) => {
 });
 socials.iconBandcamp.forEach((icon: Element) => {
 	(icon as HTMLDivElement).style.mask = `var(--icon-bandcamp)`;
+});
+socials.iconRSS.forEach((icon: Element) => {
+	(icon as HTMLDivElement).style.mask = `var(--icon-rss)`;
 });
