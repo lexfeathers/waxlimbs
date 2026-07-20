@@ -19,7 +19,12 @@
   {{ for item of grid }}
   <figure data-type="image" class="grid-item shadow-hover">
     <img src="{{ item.image_url }}" alt="{{ item.image_alt }}">
-    <figcaption>{{ item.image_alt |> md }}</figcaption>
+    <figcaption>
+        {{ item.image_alt |> md }}
+        <p class="credit">
+            {{ item.image_credit }}
+        </p>
+    </figcaption>
   </figure>
   {{ /for }}
 </div>
@@ -52,6 +57,12 @@
             &:hover {
                 scale: 101%;
             }
+        }
+
+        figcaption .credit {
+            font-style: italic;
+            font-size: var(--font-small);
+            opacity: var(--translucent);
         }
 
         figcaption:not(img.lightbox + figcaption) {

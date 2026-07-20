@@ -45,6 +45,7 @@ document.addEventListener('keydown', function (event) {
 		const lightboxImages = imageGrid.querySelectorAll('img');
 
 		let currentLightboxIndex = -1;
+
 		lightboxImages.forEach((image: HTMLImageElement, index) => {
 			if (image === currentLightbox) {
 				currentLightboxIndex = index;
