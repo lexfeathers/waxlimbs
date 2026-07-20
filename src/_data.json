@@ -10,20 +10,20 @@
 		"logo_width": "160px",
 		"socials": [
 			{
-				"name": "Instagram",
-				"link": "https://instagram.com/waxlimbs"
-			},
-			{
-				"name": "YouTube",
-				"link": "https://youtube.com/waxlimbs"
-			},
-			{
 				"name": "Bsky",
 				"link": "https://bsky.app/profile/waxlimbs.com"
 			},
 			{
 				"name": "Mastodon",
 				"link": "https://mastodon.social/@waxlimbs"
+			},
+			{
+				"name": "YouTube",
+				"link": "https://youtube.com/waxlimbs"
+			},
+			{
+				"name": "Instagram",
+				"link": "https://instagram.com/waxlimbs"
 			},
 			{
 				"name": "Tiktok",
