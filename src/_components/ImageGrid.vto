@@ -6,7 +6,8 @@
     grid: [
         {
             image_url,
-            image_alt
+            image_alt,
+            image_attribution
         }
     ]
 
@@ -21,8 +22,8 @@
     <img src="{{ item.image_url }}" alt="{{ item.image_alt }}">
     <figcaption>
         {{ item.image_alt |> md }}
-        <p class="credit">
-            {{ item.image_credit }}
+        <p class="attribution">
+            {{ item.image_attribution }}
         </p>
     </figcaption>
   </figure>
@@ -59,7 +60,7 @@
             }
         }
 
-        figcaption .credit {
+        figcaption .attribution {
             font-style: italic;
             font-size: var(--font-small);
             opacity: var(--translucent);
