@@ -581,12 +581,13 @@ footer {
 	.footer-copy,
 	.copyright {
 		color: var(--color-primary-faint);
+		text-align: center;
 	}
 }
 
 .footer-icons {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	gap: calc(var(--spacing) * 4);
 	flex-wrap: wrap;
 
