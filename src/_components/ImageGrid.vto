@@ -14,7 +14,7 @@
 
 {{> const uuid = crypto.randomUUID() }}
 
-<div class="section image-grid-{{ uuid }}">
+<div class="section image-grid-{{ uuid }}" data-type="image-grid">
   {{# Loop through each provided grid-item in the grid array #}}
   {{ for item of grid }}
   <figure data-type="image" class="grid-item shadow-hover">
