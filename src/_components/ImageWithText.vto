@@ -1,3 +1,14 @@
+{{# 
+
+    Takes the following inputs:
+
+    - heading
+    - blurb
+    - image_url
+    - image_alt
+    
+ #}}
+
 {{> const uuid = crypto.randomUUID() }}
 
 <div class="section component image-with-text-{{ uuid }}">
@@ -5,7 +16,7 @@
 	{{ if heading }}
 		<h2>{{ heading }}</h2>
 	{{ /if }}	
-    <p>{{ blurb }}</p>
+    <p>{{ blurb |> md }}</p>
   </div>
   <div class="image">
 	<figure data-type="image">
@@ -59,7 +70,7 @@
 		}
 	}
 
-	@media screen and (max-width: 899px) {
+	@media (width <= 899px) {
 		.image-with-text-{{ uuid }} {
 			flex-direction: 
 				{{ if image_orientation == 'left' || image_orientation == 'Left'}}

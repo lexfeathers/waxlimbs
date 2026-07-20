@@ -1,0 +1,68 @@
+{{# 
+
+    Takes the following inputs:
+
+    columns,
+    grid: [
+        {
+            image_url,
+            image_alt
+        }
+    ]
+
+ #}}
+
+{{> const uuid = crypto.randomUUID() }}
+
+<div class="section image-grid-{{ uuid }}">
+  {{# Loop through each provided grid-item in the grid array #}}
+  {{ for item of grid }}
+  <figure data-type="image" class="grid-item shadow-hover">
+    <img src="{{ item.image_url }}" alt="{{ item.image_alt }}">
+    <figcaption>{{ item.image_alt |> md }}</figcaption>
+  </figure>
+  {{ /for }}
+</div>
+
+<style>
+.image-grid-{{ uuid }} {
+    gap: calc(var(--spacing) * 2);
+    display: grid;
+    grid-template-columns: repeat({{ columns }}, 1fr);
+    grid-template-rows: square;
+
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: 100%;
+        overflow: hidden;
+        aspect-ratio: 1/1;
+        margin: 0;
+
+        img:not(.lightbox) {
+            object-fit: cover;
+            min-height: 100%;
+            transition: 0.2s ease-out;
+            transition-property: scale;
+            cursor: pointer;
+
+            &:hover {
+                scale: 101%;
+            }
+        }
+
+        figcaption:not(img.lightbox + figcaption) {
+            display: none;
+        }
+    }
+}
+@media (width <= 839px) {
+    .image-grid-{{ uuid }} {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}
+</style>
