@@ -90,6 +90,9 @@ html {
 	position: absolute;
 	translate: 0 -0.45ch;
 }
+.translucent {
+	opacity: var(--translucent);
+}
 
 .subtitle {
 	color: var(--color-primary-faint);
@@ -237,6 +240,16 @@ iframe[src*='bandcamp.com'] {
 
 	@media (width <= 749px) {
 		width: 100%;
+	}
+}
+
+.wordmark {
+	width: 400px;
+	display: block;
+	margin: auto;
+
+	@media (width <= 749px) {
+		width: 60%;
 	}
 }
 
