@@ -33,7 +33,6 @@ const socials = {
 // Set social icons
 socials.iconInstagram.forEach((icon: Element) => {
 	(icon as HTMLDivElement).style.mask = `var(--icon-instagram)`;
-	console.log('mask applied');
 });
 socials.iconTiktok.forEach((icon: Element) => {
 	(icon as HTMLDivElement).style.mask = `var(--icon-tiktok)`;

@@ -19,15 +19,16 @@
   {{# Loop through each provided grid-item in the grid array #}}
   {{ for item of grid }}
   <figure data-type="image" class="grid-item shadow-hover">
+    
     <img src="{{ item.image_url }}" alt="{{ item.image_alt }}">
+
     <figcaption>
         {{ item.image_alt |> md }}
-        {{ if image_attribution }}
-            <p class="attribution">
-                {{ item.image_attribution }}
-            </p>
+        {{ if item.image_attribution }}
+            <p class="attribution">{{ item.image_attribution }}</p>
         {{ /if }}
     </figcaption>
+
   </figure>
   {{ /for }}
 </div>

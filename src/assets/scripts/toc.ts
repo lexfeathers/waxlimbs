@@ -1,4 +1,4 @@
-import { slugify } from 'https://cdn.jsdelivr.net/gh/lumeland/markdown-plugins@0.12.0/utils.ts';
+import { slugify } from './slugify.ts';
 
 // Get headings
 const headings = Array.from(
