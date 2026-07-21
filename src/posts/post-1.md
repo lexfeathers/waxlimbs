@@ -2,8 +2,9 @@
 title: first post
 author: lex
 date: 2026-01-03
+draft: false
 tags: ['Demo', 'Test']
-cover: /uploads/20251018-Waxlimbs-Handlebar-13.jpg
+cover: /uploads/HandleBar2025_EmThuro/20251018-Waxlimbs-Handlebar-13.jpg
 ---
 
 Esse aliquip sunt minim culpa.[^1] Laborum id duis excepteur mollit consectetur magna velit mollit. Cupidatat dolore sunt enim laboris aute aliqua culpa culpa consequat. Cupidatat fugiat veniam commodo occaecat enim consequat deserunt fugiat in sit ullamco adipisicing.
