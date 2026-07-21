@@ -12,10 +12,9 @@ layout: layout.vto
         {{ /for }}
     {{ /if }}
 
-    {{ include "snippets/markdown-toc.vto" }}
-
     <hr>
     
+    {{ await comp.toc() }}
 </div>
 
 <article>
