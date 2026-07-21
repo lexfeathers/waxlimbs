@@ -2,10 +2,11 @@
 
     Takes the following inputs:
 
-    - heading
-    - blurb
-    - image_url
-    - image_alt
+    heading
+    blurb
+    image_url
+    image_alt
+	image_attribution
     
  #}}
 
@@ -23,6 +24,11 @@
 		<img src="{{ image_url }}" alt="{{ image_alt }}" loading="lazy" />
 		<figcaption>
 			{{ image_alt }}
+			{{ if image_attribution }}
+				<span class="attribution">
+					{{ image_attribution }}
+				</span>
+			{{ /if }}
 		</figcaption>
 	</figure>
   </div>

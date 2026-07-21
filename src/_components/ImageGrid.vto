@@ -23,9 +23,11 @@
     <img src="{{ item.image_url }}" alt="{{ item.image_alt }}">
 
     <figcaption>
-        {{ item.image_alt |> md }}
+        {{ item.image_alt }}
         {{ if item.image_attribution }}
-            <p class="attribution">{{ item.image_attribution }}</p>
+            <span class="attribution">
+                {{ item.image_attribution }}
+            </span>
         {{ /if }}
     </figcaption>
 
@@ -66,12 +68,6 @@
             &:hover {
                 scale: 101%;
             }
-        }
-
-        figcaption .attribution {
-            font-style: italic;
-            font-size: var(--font-small);
-            opacity: var(--translucent);
         }
 
         figcaption:not(img.lightbox + figcaption) {

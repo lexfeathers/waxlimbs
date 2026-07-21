@@ -179,11 +179,22 @@ hr {
 figure {
 	margin: calc(var(--spacing) * 6) 0;
 
+	&:has(.lightbox) figcaption .attribution {
+		display: block;
+		margin: calc(var(--spacing) * 2) 0;
+	}
+
 	figcaption {
 		margin-top: calc(var(--spacing) * 2);
 		font-size: var(--font-small);
 		color: var(--color-primary-faint);
 		font-style: italic;
+
+		.attribution {
+			font-style: italic;
+			font-size: var(--font-small);
+			opacity: var(--translucent);
+		}
 	}
 }
 
