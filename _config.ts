@@ -12,6 +12,7 @@ import basePath from 'lume/plugins/base_path.ts';
 import footnote from 'npm:markdown-it-footnote@latest';
 import implicitFigures from 'npm:markdown-it-image-figures@latest';
 import resolveUrls from 'lume/plugins/resolve_urls.ts';
+import toc from 'https://cdn.jsdelivr.net/gh/lumeland/markdown-plugins@0.12.0/toc.ts';
 
 // Pass options to markdown-it plugins
 const markdown = {
@@ -50,6 +51,11 @@ site.use(basePath());
 site.use(resolveUrls());
 site.use(slugify_urls());
 site.use(date());
+site.use(
+	toc({
+		anchor: false,
+	})
+);
 site.use(
 	favicon({
 		input: '/assets/icons/Mask_White_Stroke_Thicker_Favicon.svg',

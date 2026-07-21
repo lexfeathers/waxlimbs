@@ -2,6 +2,8 @@
 title: press
 ---
 
+{{ await comp.Toc() }}
+
 <figure data-type="image">
     <img src="/uploads/HandleBar2025_EmThuro/20251018-Waxlimbs-Handlebar-12.jpg" alt="Alt">
     <figcaption>Waxlimbs in 2025, photo by Emily Thuro</figcaption>
@@ -72,11 +74,20 @@ title: press
     </p>
 
     <h2>Live</h2>
+
+    {{ await comp.ImageWithText({
+        blurb: `
+            In addition to their unique sonic position in the rock scene, Waxlimbs has quickly gathered a 
+            passionate fanbase through their energetic, fine-tuned performances and captivating stage presence. 
+        `,
+        image_url: "/uploads/FromTheGarden2023/band_ftg_1.png",
+        image_alt: "Waxlimbs performing in 2023's 'From The Garden'",
+        image_orientation: "left"
+    }) }}
+
     <p>
-        In addition to their unique sonic position in the rock scene, Waxlimbs has quickly gathered a 
-        passionate fanbase through their energetic, fine-tuned performances and captivating stage presence. 
         Live, they perform in dramatic white masks with a reactive lightshow, both of which complement 
-        their unmistakable sound and leaves the audience fully immersed. 
+        their unmistakable sound and leaves the audience fully immersed.
     </p>
 
     <h3>Concert film</h3>
@@ -207,7 +218,11 @@ title: press
 
     <h2>Videos</h2>
 
+    <h3>Dead In The Water (2020)</h3>
+
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E2Hd4MBF7x8?si=mQcDarradUHLDTvJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h3>Watcher (From The Garden, 2023)</h3>
 
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MFB1IKaYPMI?si=r5pFlftaAQNLLx3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>

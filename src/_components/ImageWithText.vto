@@ -16,7 +16,7 @@
 	{{ if heading }}
 		<h2>{{ heading }}</h2>
 	{{ /if }}	
-    <div>{{ blurb |> md }}</div>
+    <div class="blurb">{{ blurb |> md }}</div>
   </div>
   <div class="image">
 	<figure data-type="image">
@@ -50,6 +50,10 @@
 
 		.text {
 			width: 60%;
+
+			.blurb p:first-child {
+				margin-top: 0;
+			}
 		}
 
 		.image {
@@ -57,7 +61,6 @@
 			justify-content: center;
 			align-items: center;
 			width: 40%;
-            margin: calc(var(--spacing) * 8) 0 calc(var(--spacing) * 4);
 
 			figure {
 				margin: 0;
@@ -72,6 +75,7 @@
 
 	@media (width <= 899px) {
 		.image-with-text-{{ uuid }} {
+			margin: 0;
 			flex-direction: 
 				{{ if image_orientation == 'left' || image_orientation == 'Left'}}
 					column-reverse
@@ -81,9 +85,13 @@
 			;
 			gap: calc(var(--spacing) * 4);
 
-			& .text, .image {
+			.text, .image {
 				width: 100%;
                 margin: unset;
+			}
+
+			.image {
+				margin: calc(var(--spacing) * 8) 0 calc(var(--spacing) * 4);
 			}
 		}
 	}

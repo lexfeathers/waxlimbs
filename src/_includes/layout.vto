@@ -14,7 +14,7 @@
 
         <main id="main"> 
             <section class="main-content">
-                <h1 class="page-title">
+                <h1 class="page-title" data-toc="ignore">
                     {{ if title == "home" }}
                         {{# {{- site.title |> toUpperCase() -}} #}}
                         <img src="/assets/images/wordmark_white.png" alt="Waxlimbs" class="wordmark">
@@ -39,9 +39,12 @@
             --logo: url({{ site.logo |> url }});
             --logo_mobile: url({{ site.logo_mobile |> url }});
             --logo_width: {{ site.logo_width }};
+            
             /* Icons */
-            --icon-menu: url({{ "list" |> icon("phosphor")|> url }});
+            --icon-menu: url({{ "list" |> icon("phosphor") |> url }});
             --icon-close: url({{ "x" |> icon("phosphor") |> url }});
+            --icon-info: url({{ "dots-three-circle:thin" |> icon("phosphor") |> url }});
+            
             /* Socials */
             --icon-instagram: url({{ "instagram-logo:thin" |> icon("phosphor") |> url }});
             --icon-bsky: url({{ "butterfly:thin" |> icon("phosphor") |> url }});
