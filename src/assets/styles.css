@@ -42,6 +42,9 @@
 	--spacing: 0.25rem;
 	--sidebar-width: calc(var(--spacing) * 54);
 
+	/* Components */
+	--component-spacing: calc(var(--spacing) * 16);
+
 	/* Borders */
 	--radius: calc(var(--spacing) / 2);
 
@@ -103,6 +106,13 @@ html {
 	color: var(--color-primary-faint);
 }
 /* End Helpers */
+
+/* Global Components */
+.section {
+	margin-top: var(--component-spacing);
+	margin-bottom: calc(var(--component-spacing) / 2);
+}
+/* End global components */
 
 body {
 	display: flex;
