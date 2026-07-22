@@ -1,0 +1,79 @@
+---
+title: music
+---
+
+{{ await comp.Showcase({
+    image_url: "/uploads/FromTheGarden2023/band_ftg_1.png",
+    image_alt: "Waxlimbs performing on a dim, foggy stage and lit from behind by diamond-shaped lights",
+    image_attribution: "Photo by Zach Silverstein",
+    blurb: "All of our releases, from newest to oldest."
+}) }}
+
+{{ if site.releases?.length }}    
+    <ul>
+    {{ for release of site.releases }}
+        <div class="release-item">
+            <figure data-type="image">
+                <img src="{{ release.image_url }}" alt="{{ release.image_alt }}">
+                <figcaption>
+                    {{ release.image_alt |> md }}
+
+                    {{ if release.image_attribution }}
+                        <span class="attribution">
+                            Artwork by 
+                            {{ if release.artist_url }}
+                            <a href="{{ release.artist_url }}">
+                            {{ /if }}
+                                {{ release.image_attribution }}
+                            {{ if release.artist_url }}
+                            </a>
+                            {{ /if }}
+                        </span>
+                    {{ /if }}
+                </figcaption>
+            </figure>
+            <div class="text">
+                <h2>{{ release.title }}</h2>
+                <p>
+                    Released: 
+                    <time datetime="{{ release.date |> date("ATOM") }}">
+                        {{ release.date |> date("HUMAN_DATE") }}
+                    </time>
+                </p>
+
+                {{ for link of release.links }}
+                    <span class="release-link">
+                        <a href="{{ link.url |> url }}">{{ link.title }}</a>
+                    </span>
+                {{ /for }}
+            </div>
+        </div>
+    {{ /for }}
+    </ul>
+{{ /if }}
+
+<style>
+.release-item {
+    display: flex;
+    gap: calc(var(--spacing) * 4);
+    
+    &:not(:last-child) {
+        margin-bottom: calc(var(--spacing) * 4);
+    }
+
+    figure {
+        width: 200px;
+        margin: 0;
+
+        figcaption:not(img.lightbox + figcaption) {
+			display: none;
+		}
+    }
+
+    .text {
+        .release-link:not(:last-child) {
+            margin-right: calc(var(--spacing) * 2);
+        }
+    }
+}
+</style>
