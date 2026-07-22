@@ -412,8 +412,17 @@ iframe[src*='bandcamp.com'] {
 
 		@media (width >= 750px) {
 			display: flex;
+
+			hr {
+				margin: calc(var(--spacing) * 2) 0;
+			}
 		}
 	}
+}
+
+.utility-menu__mobile {
+	flex-direction: column;
+	align-items: flex-end;
 }
 
 /* Menu links */
@@ -483,8 +492,10 @@ iframe[src*='bandcamp.com'] {
 .expanded {
 	display: flex !important;
 
-	&#main-menu {
-		border-left: 1px solid var(--color-secondary);
+	@media (width <= 749px) {
+		&#main-menu {
+			border-left: 1px solid var(--color-secondary);
+		}
 	}
 }
 

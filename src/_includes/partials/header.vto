@@ -24,12 +24,19 @@
             {{ for page of search.pages("type=page", "order=asc") }}
                 <a href="{{ page.url |> url }}">{{ page.title |> toUpperCase() }}</a>
             {{ /for }}
+            {{ if search.pages("type=utility").length }}
+                <hr class="translucent mobile-only">
+                <div class="mobile-only utility-menu__mobile">
+                    {{ for link of search.pages("type=utility") }}
+                        <a href="{{ link.url |> url }}">{{ link.title |> toUpperCase() }}</a>
+                    {{ /for }}
+                </div>
+            {{ /if }}
         </div>
 	</nav>
 
 	<div class="sidebar-footer">
         {{ if search.pages("type=utility").length }}
-            {{# <p class="font-small translucent">Utility</p> #}}
             <nav>
             {{ for link of search.pages("type=utility") }}
                 <a href="{{ link.url |> url }}">{{ link.title |> toUpperCase() }}</a>
