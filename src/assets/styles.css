@@ -280,8 +280,8 @@ details {
 }
 .toc {
 	line-height: 1.8;
-	border-left: 1px solid var(--color-primary-fainter);
 	margin-left: 1rem;
+	border-left: 1px solid var(--color-primary-fainter);
 
 	ul {
 		padding-left: revert;

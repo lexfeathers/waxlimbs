@@ -33,7 +33,7 @@ title: music
                 </figcaption>
             </figure>
             <div class="text">
-                <h2>{{ release.title }}</h2>
+                <h2><span class="release-title">{{ release.title }}</span> <span class="translucent font-small">[{{ release.type }}]</span></h2>
                 <p>
                     Released: 
                     <time datetime="{{ release.date |> date("ATOM") }}">
@@ -74,6 +74,12 @@ title: music
     }
 
     .text {
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
         .release-link:not(:last-child) {
             margin-right: calc(var(--spacing) * 2);
         }
@@ -96,6 +102,8 @@ title: music
 
         .text h2 {
             margin-top: 0;
+            flex-direction: column;
+            align-items: flex-start;
         }
     }
 }

@@ -47,6 +47,7 @@
 			"image_attribution": "Aubrey Crowe / Recursion Error",
 			"artist_url": "https://recursionerror.xyz",
 			"date": "2026-06-28T12:00",
+			"type": "Single",
 			"links": [
 				{
 					"title": "Bandcamp",
@@ -69,6 +70,7 @@
 			"image_attribution": "Lex Feathers",
 			"artist_url": "https://lexfeathers.ca",
 			"date": "2025-10-16T12:00",
+			"type": "Single",
 			"links": [
 				{
 					"title": "Bandcamp",
@@ -91,6 +93,7 @@
 			"image_attribution": "Emma Embur",
 			"artist_url": "https://emmaembur.my.canva.site/emma-embur-home",
 			"date": "2024-10-04T12:00",
+			"type": "Album",
 			"links": [
 				{
 					"title": "Bandcamp",
@@ -113,6 +116,7 @@
 			"image_attribution": "Lex Feathers",
 			"artist_url": "https://lexfeathers.ca",
 			"date": "2022-12-18T12:00",
+			"type": "Single",
 			"links": [
 				{
 					"title": "Bandcamp",
@@ -135,6 +139,7 @@
 			"image_attribution": "Gabby DaRienzo",
 			"artist_url": "https://gabbydarienzo.com",
 			"date": "2022-10-17T12:00",
+			"type": "Single",
 			"links": [
 				{
 					"title": "Bandcamp",
@@ -157,6 +162,7 @@
 			"image_attribution": "Saffron Aurora",
 			"artist_url": "https://saffronaurora.com/",
 			"date": "2020-10-16T12:00",
+			"type": "Single",
 			"links": [
 				{
 					"title": "Bandcamp",
@@ -179,6 +185,7 @@
 			"image_attribution": "Lex Feathers",
 			"artist_url": "https://lexfeathers.ca",
 			"date": "2020-01-03T12:00",
+			"type": "Single",
 			"links": [
 				{
 					"title": "Bandcamp",
@@ -201,6 +208,7 @@
 			"image_attribution": "Natalie Dombois",
 			"artist_url": "https://linktr.ee/nataliedombois",
 			"date": "2019-11-23T12:00",
+			"type": "EP",
 			"links": [
 				{
 					"title": "Bandcamp",
@@ -223,6 +231,7 @@
 			"image_attribution": "Natalie Dombois",
 			"artist_url": "https://linktr.ee/nataliedombois",
 			"date": "2019-06-27T12:00",
+			"type": "Album",
 			"links": [
 				{
 					"title": "Bandcamp",
@@ -245,6 +254,7 @@
 			"image_attribution": "Jacob Irish",
 			"artist_url": "https://momus.ca/person/jacob-irish/",
 			"date": "2017-07-08T12:00",
+			"type": "Album",
 			"links": [
 				{
 					"title": "Bandcamp",
