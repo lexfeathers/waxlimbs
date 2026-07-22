@@ -4,10 +4,13 @@ title: "press"
 
 {{ await comp.Toc() }}
 
-<figure data-type="image">
-    <img src="/uploads/HandleBar2025_EmThuro/20251018-Waxlimbs-Handlebar-12.jpg" alt="Alt">
-    <figcaption>Waxlimbs in 2025, photo by Emily Thuro</figcaption>
-</figure>
+{{ await comp.Figure({
+    image_url: "/uploads/HandleBar2025_EmThuro/20251018-Waxlimbs-Handlebar-12.jpg",
+    image_alt: "Olivia singing while playing keys on a purple-lit stage in a Waxlimbs mask",
+    image_caption: "Waxlimbs performing in 2025",
+    image_attribution: "Emily Thuro",
+    attribution_link: "https://emilythuro.com"
+})}}
 
 <p>
     Waxlimbs is an electronic-rock project based in Toronto. The group’s sound encapsulates alternative rock, electronica and progressive metal.
@@ -47,9 +50,11 @@ title: "press"
             or relegate any member to one specific task.
         `,
         image_url: "/uploads/HandleBar2025_EmThuro/20251018-Waxlimbs-Handlebar-19.jpg",
-        image_alt: "Waxlimbs live at Handlebar in 2025.",
+        image_alt: "Lex playing bass in a black dress and a Waxlimbs mask, lit from the side with orange light",
+        image_caption: "Waxlimbs live at Handlebar in 2025.",
+        image_attribution: "Emily Thuro",
+        attribution_link: "https://www.emilythuro.com/",
         image_orientation: "right",
-        image_attribution: "Photo by Emily Thuro."
     })}}
 
     <h2>Members</h2>
@@ -85,7 +90,10 @@ title: "press"
             passionate fanbase through their energetic, fine-tuned performances and captivating stage presence. 
         `,
         image_url: "/uploads/FromTheGarden2023/band_ftg_1.png",
-        image_alt: "Waxlimbs performing in 2023's 'From The Garden'",
+        image_alt: "Waxlimbs performing on a foggy, dimly lit stage with a large set of diamond-shaped lights behind them",
+        image_caption: "Waxlimbs performing in 2023's 'From The Garden'",
+        image_attribution: "Zach Silverstein",
+        attribution_link: "https://www.zachsilverstein.com/",
         image_orientation: "left"
     }) }}
 
@@ -150,9 +158,7 @@ title: "press"
 
     <div class="gallery">
         <p class="subtitle">Photos by <a href="https://www.emilythuro.com/">Emily Thuro</a></p>
-
-        {{ 
-            await comp.ImageGrid({
+        {{ await comp.ImageGrid({
                 columns: 3,
                 grid: [
                     {
