@@ -16,7 +16,7 @@
 
 <div class="figure-{{ uuid }}">
 	<figure data-type="image">
-		<img src="{{image_url}}"{{ if image_alt }} alt="{{image_alt}}"{{ /if }} loading="lazy">
+		<img src="{{image_url}}"{{ if image_alt }} alt="{{image_alt}}"{{ /if }} class="cover" loading="lazy">
 		<figcaption>
 			{{ if image_caption }}
 				{{ image_caption |> md }}

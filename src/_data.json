@@ -274,12 +274,12 @@
 	"metas": {
 		"site": "Waxlimbs",
 		"title": "$ .page-title || =title || Waxlimbs",
-		"icon": "assets/icons/Mask_White.svg",
-		"fediverse": "https://mastodon.social/@waxlimbs",
+		"icon": "/assets/icons/Mask Logo_transparent_800x800_bandcamp.png",
+		"image": "=cover || $ .cover:first-child",
+		"description": "=description || =excerpt",
+		"color": "#ffd900",
 		"lang": "en",
-		"description": "=description",
 		"generator": true,
-		"image": "=cover",
-		"color": "#141414"
+		"fediverse": "https://mastodon.social/@waxlimbs"
 	}
 }
