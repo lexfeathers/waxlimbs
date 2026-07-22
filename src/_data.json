@@ -45,7 +45,7 @@
 			"image_url": "/assets/images/covers/cover_ByTheNeck.jpg",
 			"image_alt": "A white-on-black whispy birdlike pattern, with complex feather and bird skull motifs mixed in.",
 			"image_attribution": "Aubrey Crowe / Recursion Error",
-			"artist_url": "https://recursionerror.xyz",
+			"attribution_link": "https://recursionerror.xyz",
 			"date": "2026-06-28T12:00",
 			"type": "Single",
 			"links": [
@@ -68,7 +68,7 @@
 			"image_url": "/assets/images/covers/cover_AcrossTheCoals.jpg",
 			"image_alt": "A large cat skull aggressively sketched in thick black ink. It is sitting on a pile of bones, leaves, and feathers painted in blue ink.",
 			"image_attribution": "Lex Feathers",
-			"artist_url": "https://lexfeathers.ca",
+			"attribution_link": "https://lexfeathers.ca",
 			"date": "2025-10-16T12:00",
 			"type": "Single",
 			"links": [
@@ -91,7 +91,7 @@
 			"image_url": "/assets/images/covers/cover_WhereLiliesGrew.jpg",
 			"image_alt": "White-on-black linework depicts an androgynous figure halfway into mutating into a birdlike form.",
 			"image_attribution": "Emma Embur",
-			"artist_url": "https://emmaembur.my.canva.site/emma-embur-home",
+			"attribution_link": "https://emmaembur.my.canva.site/emma-embur-home",
 			"date": "2024-10-04T12:00",
 			"type": "Album",
 			"links": [
@@ -114,7 +114,7 @@
 			"image_url": "/assets/images/covers/cover_Need.jpg",
 			"image_alt": "A shimmering black hole surrounded by a corona of red and yellow sparks",
 			"image_attribution": "Lex Feathers",
-			"artist_url": "https://lexfeathers.ca",
+			"attribution_link": "https://lexfeathers.ca",
 			"date": "2022-12-18T12:00",
 			"type": "Single",
 			"links": [
@@ -137,7 +137,7 @@
 			"image_url": "/assets/images/covers/cover_Seer.jpg",
 			"image_alt": "A gold-framed mirror against a maroon background with cracks running through it and sparks falling from above. Tiger lilies sit on the surface surrounded by ripples, as if the surface of the mirror is a liquid.",
 			"image_attribution": "Gabby DaRienzo",
-			"artist_url": "https://gabbydarienzo.com",
+			"attribution_link": "https://gabbydarienzo.com",
 			"date": "2022-10-17T12:00",
 			"type": "Single",
 			"links": [
@@ -160,7 +160,7 @@
 			"image_url": "/assets/images/covers/cover_Witnessing.jpg",
 			"image_alt": "A linework snake curving around three diamonds, the skin on its back half falling off to reveal its skeleton",
 			"image_attribution": "Saffron Aurora",
-			"artist_url": "https://saffronaurora.com/",
+			"attribution_link": "https://saffronaurora.com/",
 			"date": "2020-10-16T12:00",
 			"type": "Single",
 			"links": [
@@ -183,7 +183,7 @@
 			"image_url": "/assets/images/covers/cover_ShelteringNight.jpg",
 			"image_alt": "A linework figure curled up, superimposed on granite rock covered in lichen and red pine needles",
 			"image_attribution": "Lex Feathers",
-			"artist_url": "https://lexfeathers.ca",
+			"attribution_link": "https://lexfeathers.ca",
 			"date": "2020-01-03T12:00",
 			"type": "Single",
 			"links": [
@@ -206,7 +206,7 @@
 			"image_url": "/assets/images/covers/cover_LiveAtDesertFish.jpg",
 			"image_alt": "A bright enclosed space filled with geometric stalactites and stalagmites, geologic strata running through them.",
 			"image_attribution": "Natalie Dombois",
-			"artist_url": "https://linktr.ee/nataliedombois",
+			"attribution_link": "https://linktr.ee/nataliedombois",
 			"date": "2019-11-23T12:00",
 			"type": "EP",
 			"links": [
@@ -229,7 +229,7 @@
 			"image_url": "/assets/images/covers/cover_TheAutumnBell.jpg",
 			"image_alt": "A spiky figure kneels in a rocky outcropping against a light background with three diamonds superimposed on it. The figure is crying out, is dark and covered in geological strata lines.",
 			"image_attribution": "Natalie Dombois",
-			"artist_url": "https://linktr.ee/nataliedombois",
+			"attribution_link": "https://linktr.ee/nataliedombois",
 			"date": "2019-06-27T12:00",
 			"type": "Album",
 			"links": [
@@ -252,7 +252,7 @@
 			"image_url": "/assets/images/covers/cover_ForScience.jpg",
 			"image_alt": "A hatched linework amalgam of various straw and feather-like objects making up the impression of a figure, including a medieval french beekeeper's hat, an arrow, and coils of grass.",
 			"image_attribution": "Jacob Irish",
-			"artist_url": "https://momus.ca/person/jacob-irish/",
+			"attribution_link": "https://momus.ca/person/jacob-irish/",
 			"date": "2017-07-08T12:00",
 			"type": "Album",
 			"links": [

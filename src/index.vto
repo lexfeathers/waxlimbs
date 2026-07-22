@@ -9,11 +9,10 @@ layout: layout.vto
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem suscipit unde adipisci necessitatibus, vero, corporis consectetur provident natus ipsa accusamus veniam quos maiores dicta quas molestiae ducimus praesentium eius consequatur.
 </p> #}}
 
-<figure data-type="image">
-    <img 
-        src="/assets/images/banner_2026.jpg" 
-        alt="Lex from Waxlimbs silhouetted by an array of diamond-shaped lights" 
-        loading="lazy"
-    />
-    <figcaption>Waxlimbs in 2026. Photography by Ratchel.Photo</figcaption>
-</figure> 
+{{ await comp.Figure({
+    image_url: "/assets/images/banner_2026.jpg",
+    image_alt: "Lex from Waxlimbs silhouetted by an array of diamond-shaped lights",
+    image_caption: "Waxlimbs in 2026",
+    image_attribution: "Ratchel.Photo",
+    attribution_link: "mailto:ratchel.photo@gmail.com"
+})}}

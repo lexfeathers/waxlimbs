@@ -2,14 +2,17 @@
 title: music
 ---
 
-{{ await comp.Showcase({
+{{ await comp.Figure({
     image_url: "/uploads/FromTheGarden2023/band_ftg_1.png",
     image_alt: "Waxlimbs performing on a dim, foggy stage and lit from behind by diamond-shaped lights",
-    image_attribution: "Photo by Zach Silverstein",
-    blurb: "All of our releases, from newest to oldest."
+    image_caption: "Waxlimbs performing in 'From The Garden (2023)'",
+    image_attribution: "Zach Silverstein",
+    attribution_link: "https://www.zachsilverstein.com/"
 }) }}
 
-{{ if releases?.length }}    
+<p>All our releases, from newest to oldest.</p>
+
+{{ if releases?.length }}
     <ul class="releases">
     {{ for release of releases }}
         <div class="release-item">
@@ -21,11 +24,11 @@ title: music
                     {{ if release.image_attribution }}
                         <span class="attribution">
                             Artwork by 
-                            {{ if release.artist_url }}
-                            <a href="{{ release.artist_url }}">
+                            {{ if release.attribution_link }}
+                            <a href="{{ release.attribution_link |> url }}">
                             {{ /if }}
                                 {{ release.image_attribution }}
-                            {{ if release.artist_url }}
+                            {{ if release.attribution_link }}
                             </a>
                             {{ /if }}
                         </span>

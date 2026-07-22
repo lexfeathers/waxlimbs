@@ -7,7 +7,8 @@
         {
             image_url,
             image_alt,
-            image_attribution
+            image_attribution,
+            attribution_link
         }
     ]
 
@@ -23,10 +24,21 @@
     <img src="{{ item.image_url }}" alt="{{ item.image_alt }}">
 
     <figcaption>
-        {{ item.image_alt }}
+        {{ if item.image_caption }}
+            {{ item.image_caption |> md }}
+        {{ else if item.image_alt }}
+            {{ item.image_alt |> md }}
+        {{ /if }}
         {{ if item.image_attribution }}
             <span class="attribution">
-                {{ item.image_attribution }}
+                Image by 
+                {{ if item.attribution_link }}
+                <a href="{{ item.attribution_link |> url }}">
+                {{ /if }}
+                    {{ item.image_attribution }}
+                {{ if item.attribution_link }}
+                </a>
+                {{ /if }}
             </span>
         {{ /if }}
     </figcaption>

@@ -28,6 +28,15 @@
 	</nav>
 
 	<div class="sidebar-footer">
+        {{ if search.pages("type=utility").length }}
+            {{# <p class="font-small translucent">Utility</p> #}}
+            <nav>
+            {{ for link of search.pages("type=utility") }}
+                <a href="{{ link.url |> url }}">{{ link.title |> toUpperCase() }}</a>
+            {{ /for }}
+            </nav>
+        {{ /if }}
+
         {{ include "partials/copyright.vto" }}
     </div>
 </header>
