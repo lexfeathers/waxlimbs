@@ -7,6 +7,10 @@
     <meta name="robots" content="noai, noimageai">
     <link rel="stylesheet" href="/assets/styles.css">
     <title>{{ site.title }} - {{ title }}</title>
+    <meta 
+        name="keywords" 
+        content="band, music, toronto, waxlimbs{{ if tags }}{{ for tag of tags}}, {{ tag }}{{ /for }}{{ /if }}"
+    >
 </head>
 <body>
     <div id="main-container">

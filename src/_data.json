@@ -48,7 +48,6 @@
 		"description": "=description",
 		"generator": true,
 		"image": "=cover",
-		"color": "#141414",
-		"keywords": ["band", "music", "toronto", "waxlimbs"]
+		"color": "#141414"
 	}
 }
