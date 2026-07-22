@@ -73,6 +73,9 @@ html {
 .font-larger {
 	font-size: var(--font-larger);
 }
+.center {
+	text-align: center;
+}
 
 .desktop-only {
 	@media (width <= 749px) {
@@ -277,6 +280,8 @@ details {
 }
 .toc {
 	line-height: 1.8;
+	border-left: 1px solid var(--color-primary-fainter);
+	margin-left: 1rem;
 
 	ul {
 		padding-left: revert;
