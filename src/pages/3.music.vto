@@ -9,9 +9,9 @@ title: music
     blurb: "All of our releases, from newest to oldest."
 }) }}
 
-{{ if site.releases?.length }}    
+{{ if releases?.length }}    
     <ul class="releases">
-    {{ for release of site.releases }}
+    {{ for release of releases }}
         <div class="release-item">
             <figure data-type="image">
                 <img src="{{ release.image_url }}" alt="{{ release.image_alt }}" loading="lazy">
