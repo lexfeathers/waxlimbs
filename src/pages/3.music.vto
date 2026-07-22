@@ -10,7 +10,7 @@ title: music
 }) }}
 
 {{ if site.releases?.length }}    
-    <ul>
+    <ul class="releases">
     {{ for release of site.releases }}
         <div class="release-item">
             <figure data-type="image">
@@ -53,10 +53,13 @@ title: music
 {{ /if }}
 
 <style>
+.releases {
+    margin-top: calc(var(--spacing) * 4);
+}
 .release-item {
     display: flex;
     gap: calc(var(--spacing) * 4);
-    
+
     &:not(:last-child) {
         margin-bottom: calc(var(--spacing) * 4);
     }
@@ -66,13 +69,33 @@ title: music
         margin: 0;
 
         figcaption:not(img.lightbox + figcaption) {
-			display: none;
+            display: none;
 		}
     }
 
     .text {
         .release-link:not(:last-child) {
             margin-right: calc(var(--spacing) * 2);
+        }
+    }
+
+    @media (width <= 749px) {
+        flex-direction: column;
+        gap: 0;
+
+        &:not(:last-child) {
+            margin-bottom: calc(var(--spacing) * 8);
+            padding-bottom: calc(var(--spacing) * 8);
+            border-bottom: 1px solid var(--color-primary-fainter);
+        }
+
+        figure {
+            width: 100%;
+            padding: calc(var(--spacing) * 4);
+        }
+
+        .text h2 {
+            margin-top: 0;
         }
     }
 }
