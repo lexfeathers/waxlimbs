@@ -14,7 +14,7 @@
 
 <div class="showcase-{{ uuid }}">
 	<figure data-type="image">
-		<img src="{{image_url}}"{{ if image_alt }} alt="{{image_alt}}"{{ /if }}>
+		<img src="{{image_url}}"{{ if image_alt }} alt="{{image_alt}}"{{ /if }} loading="lazy">
 		<figcaption>
 			{{ image_alt |> md }}
 			{{ if image_attribution }}

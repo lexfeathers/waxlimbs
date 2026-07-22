@@ -14,7 +14,7 @@ title: music
     {{ for release of site.releases }}
         <div class="release-item">
             <figure data-type="image">
-                <img src="{{ release.image_url }}" alt="{{ release.image_alt }}">
+                <img src="{{ release.image_url }}" alt="{{ release.image_alt }}" loading="lazy">
                 <figcaption>
                     {{ release.image_alt |> md }}
 
