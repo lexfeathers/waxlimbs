@@ -54,26 +54,26 @@ title: "press"
 
     <h2>Members</h2>
     <p>
-        Project founder Lex’s stage presence on vocals, bass and electric guitar is angular and explosive. 
+        Project founder <a href="https://lexfeathers.ca">Lex’s</a> stage presence on vocals, bass and electric guitar is angular and explosive. 
         Growing up listening to the likes of Nine Inch Nails, Björk and Massive Attack, her in-house production skills 
         have allowed Waxlimbs to develop a heavy focus on synthesis and sound design, building a clear 
         and unique vision since the beginning of the project. 
     </p>
 
     <p>
-        Powerful belting vocals by Olivia - as well as supporting on synths, keys, and guitar - 
+        Powerful belting vocals by <a href="https://leverette.bandcamp.com/">Olivia</a> - as well as supporting on synths, keys, and guitar - 
         have been compared to Amy Lee (Evanescence) and Ann Wilson (Heart), given an edge by her 
         classical background in theatre, choir, and opera. 
     </p>
         
     <p>
-        Guitarist and vocalist Will’s shimmering 
+        Guitarist and vocalist <a href="https://willjarvis.bandcamp.com/">Will’s</a> shimmering 
         atmospheric playing and crystal clear baritone, reminiscent of Jeff Buckley, soars above his 
         guttural and dynamic solos. 
     </p>
 
     <p>
-        Paul’s textural and meticulous drumming holds the group in a controlled chaos, 
+        <a href="https://astrolope.bandcamp.com/album/astrolope">Paul’s</a>  textural and meticulous drumming holds the group in a controlled chaos, 
         incorporating electronic percussion while covertly operating the band’s light show and live tracks. 
     </p>
 
@@ -278,9 +278,20 @@ title: "press"
         }
     }
 
-    h2:not(.component h2)::before {
-        content: '⬖';
-        margin-right: calc(var(--spacing) * 4);
+    h2:not(.component h2) {
+        display: flex;
+        align-items: center;
+        gap: calc(var(--spacing) * 3);
+        
+        &::before {
+            content: '';
+            width: 2.5rem;
+            aspect-ratio: 1/1;
+            mask: var(--icon-diamond);
+            mask-position: center;
+            mask-repeat: no-repeat;
+            background-color: var(--color-primary);
+        }
     }
 }
 </style>

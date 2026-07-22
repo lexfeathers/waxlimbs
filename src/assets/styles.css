@@ -96,7 +96,7 @@ html {
 .external::after {
 	content: '↗';
 	margin-left: calc(var(--spacing) / 2);
-	font-size: var(--font-small);
+	font-size: calc(var(--font-small) / 1.25);
 	color: var(--color-secondary-faint);
 	position: absolute;
 	translate: 0 -0.45ch;
