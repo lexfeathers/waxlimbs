@@ -408,26 +408,27 @@ iframe[src*='bandcamp.com'] {
 		@media (width <= 749px) {
 			align-items: flex-end;
 			column-gap: calc(var(--spacing) * 2);
-		}
-
-		@media (width >= 750px) {
-			display: flex;
-
 			hr {
 				margin: calc(var(--spacing) * 2) 0;
 			}
+		}
+
+		@media (width >= 749px) {
+			display: flex;
 		}
 	}
 }
 
 .utility-menu__mobile {
 	flex-direction: column;
+	width: 100%;
 	align-items: flex-end;
 }
 
 /* Menu links */
 #nav #main-menu a,
-.sidebar-footer nav a {
+.sidebar-footer nav a,
+#main-menu .utility-menu__mobile a {
 	display: block;
 	text-decoration: none;
 	transition-property: letter-spacing;
