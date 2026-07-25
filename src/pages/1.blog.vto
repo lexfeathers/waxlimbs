@@ -1,15 +1,23 @@
 ---
 title: entries
-draft: true
+draft: false
 ---
+{{ set posts = search.pages("type=post draft=false", "order=desc")}}
 
+{{ if posts.length }}
 <p>Newest to oldest</p>
+{{ /if }}
+
 <div class="blog-list">
-    {{ for post of search.pages("type=post", "order=desc") }}
-        <p>
-            <a href="{{ post.url }}" class="blog-list__post">{{ post.title |> toUpperCase() }}</a>
-            <span>//</span>
-            <span>{{ post.date |> date("HUMAN_DATE") |> toUpperCase() }}</span>
-        </p>
-    {{ /for }}
+    {{ if posts.length }}
+        {{ for post of posts }}
+            <p>
+                <a href="{{ post.url }}" class="blog-list__post">{{ post.title |> toUpperCase() }}</a>
+                <span>//</span>
+                <span>{{ post.date |> date("HUMAN_DATE") |> toUpperCase() }}</span>
+            </p>
+        {{ /for }}
+    {{ else }}
+        <p>No posts yet...</p>
+    {{ /if }}
 </div>
