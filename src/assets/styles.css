@@ -589,7 +589,7 @@ form {
 	row-gap: calc(var(--spacing) * 4);
 }
 
-form input,
+form input:not([type="submit"]),
 textarea {
 	padding: calc(var(--spacing) * 2);
 	line-height: calc(var(--spacing) * 4);
