@@ -1,15 +1,15 @@
 ---
 title: first post
 author: lex
-date: 2026-01-03
-draft: false
-tags: ['Demo', 'Test']
-cover: /uploads/HandleBar2025_EmThuro/20251018-Waxlimbs-Handlebar-13.jpg
+date: 2026-01-03T12:00
+draft: true
+tags: ["Demo", "Test", "And so on"]
+cover: /uploads/NXNE2024_OrlandoDaSilva/waxlimbs_nxne2024_1_crop.jpg
 ---
 
 Esse aliquip sunt minim culpa.[^1] Laborum id duis excepteur mollit consectetur magna velit mollit. Cupidatat dolore sunt enim laboris aute aliqua culpa culpa consequat. Cupidatat fugiat veniam commodo occaecat enim consequat deserunt fugiat in sit ullamco adipisicing.
 
-![alt text](/uploads/HandleBar2025_EmThuro/20251018-Waxlimbs-Handlebar-13.jpg 'Lex and Liv, baybeeeee')
+![alt text](/uploads/HandleBar2025_EmThuro/20251018-Waxlimbs-Handlebar-13.jpg "Lex and Liv, baybeeeee")
 
 ## First title
 
