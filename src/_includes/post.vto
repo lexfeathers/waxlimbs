@@ -14,9 +14,11 @@ layout: layout.vto
 
     <hr>
     
-    {{ await comp.toc({
-        open: false
-    }) }}
+    {{ if show_table_of_contents }}
+        {{ await comp.toc({
+            open: false
+        }) }}
+    {{ /if }}
 </div>
 
 <article>
