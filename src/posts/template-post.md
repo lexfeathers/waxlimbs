@@ -24,9 +24,23 @@ And this is another paragraph!
 
 For links, you can [do this](https://shop.waxlimbs.com)! If you want to link to a page on this site, you don't need the `https://` (this is how you render code) part of the link. For example, here's a link to [the press page.](/pages/press)
 
-## Another title
+## About Markdown
 
 If you want to know more about ways to use markdown, [here's a great resource](https://daringfireball.net/projects/markdown/dingus) by John Gruber, the guy who invented markdown.
+
+### Feeling spicy?
+
+You can use html in markdown files too! For example, <a href="/">here's a link to the homepage, written in HTML!</a>
+
+<!--
+    This is a comment! It won't appear in the post but can be good for leaving yourself notes. If you're in VS Code, you can hit "CTRL/CMD + /" to automatically make a comment. They can contain multiple lines like this,
+-->
+
+<!-- or just a single line, like this! -->
+
+<!-- To display a horizontal rule (line), use three dashes surrounded by empty lines: -->
+
+---
 
 And lastly, here are those footnotes from the beginning:
 
