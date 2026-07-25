@@ -9,7 +9,7 @@
     <title>{{ site.title }} - {{ title }}</title>
     <meta 
         name="keywords" 
-        content="band, music, toronto, waxlimbs{{ if tags }}{{ for tag of tags}}, {{ tag }}{{ /for }}{{ /if }}"
+        content="band, music, toronto, waxlimbs{{ if tags }}{{ for tag of tags }}, {{ tag }}{{ /for }}{{ /if }}"
     >
 </head>
 <body>
@@ -17,15 +17,15 @@
         {{ include "partials/header.vto" }}
 
         <main id="main"> 
-            <section class="main-content">
-                <h1 class="page-title" data-toc="ignore">
-                    {{ if title == "home" }}
-                        {{# {{- site.title |> toUpperCase() -}} #}}
-                        <img src="/assets/images/wordmark_white.png" alt="Waxlimbs" class="wordmark">
-                    {{ else }}
-                        {{- title |> toUpperCase() -}}
-                    {{ /if }}
-                </h1>
+            <h1 class="page-title" data-toc="ignore">
+                {{ if title == "home" }}
+                    {{# {{- site.title |> toUpperCase() -}} #}}
+                    <img src="/assets/images/wordmark_white.png" alt="Waxlimbs" class="wordmark">
+                {{ else }}
+                    {{- title |> toUpperCase() -}}
+                {{ /if }}
+            </h1>
+            <section id="page-content">
                 {{ content |> safe }}
             </section>
 

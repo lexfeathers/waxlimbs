@@ -1,5 +1,5 @@
 import './lightbox.ts';
-import './toc.ts';
+// import './toc.ts';
 
 markExternalLinks();
 

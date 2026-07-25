@@ -1,6 +1,16 @@
 {{# For use with vento files #}}
 
-<details{{ if open == true }} open{{ /if }}>
+{{# <details{{ if open == true }} open{{ /if }}>
     <summary tabindex="0">Contents</summary>
     <nav class="toc font-small"></nav>
+</details> #}}
+
+<details{{ if open == true }} open{{ /if }}>
+
+    <summary tabindex="0">Contents</summary>
+
+    <nav toc="page-content" class="toc font-small">
+        <!-- toc will be generated here -->
+    </nav>
+
 </details>

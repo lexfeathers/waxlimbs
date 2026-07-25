@@ -3,7 +3,7 @@ import { slugify } from './slugify.ts';
 // Get headings
 const headings = Array.from(
 	document.querySelectorAll(
-		'.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6'
+		'#page-content h1, #page-content h2, #page-content h3, #page-content h4, #page-content h5, #page-content h6'
 	)
 );
 
