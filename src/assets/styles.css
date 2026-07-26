@@ -786,7 +786,7 @@ footer {
 }
 
 /* Handle Paul's fuckass ultra-wide monitor */
-@media (width >= 2000px) {
+@media (width >= 2400px) {
 	body {
 		align-items: center;
 	}
