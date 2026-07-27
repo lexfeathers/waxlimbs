@@ -34,7 +34,7 @@ const markdown = {
 const site = lume(
 	{
 		src: './src',
-		location: new URL('localhost:3000'),
+		location: new URL('https://waxlimbs.com'),
 	},
 	{
 		markdown,
