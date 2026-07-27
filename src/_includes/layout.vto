@@ -17,15 +17,15 @@
         {{ include "partials/header.vto" }}
 
         <main id="main"> 
-            <h1 class="page-title" data-toc="ignore">
-                {{ if title == "home" }}
-                    {{# {{- site.title |> toUpperCase() -}} #}}
-                    <img src="/assets/images/wordmark_white.png" alt="Waxlimbs" class="wordmark">
-                {{ else }}
-                    {{- title |> toUpperCase() -}}
-                {{ /if }}
-            </h1>
             <section id="page-content">
+                <h1 class="page-title" no-toc>
+                    {{ if title == "home" }}
+                        {{# {{- site.title |> toUpperCase() -}} #}}
+                        <img src="/assets/images/wordmark_white.png" alt="Waxlimbs" class="wordmark">
+                    {{ else }}
+                        {{- title |> toUpperCase() -}}
+                    {{ /if }}
+                </h1>
                 {{ content |> safe }}
             </section>
 

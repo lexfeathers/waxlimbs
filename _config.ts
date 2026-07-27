@@ -12,7 +12,7 @@ import basePath from 'lume/plugins/base_path.ts';
 import footnote from 'npm:markdown-it-footnote@latest';
 import implicitFigures from 'npm:markdown-it-image-figures@latest';
 import resolveUrls from 'lume/plugins/resolve_urls.ts';
-import toc from 'https://cdn.jsdelivr.net/gh/lumeland/experimental-plugins@11dbf6ba809dfce4ef74c6d00c3618c6cde67e8b/toc/mod.ts';
+import toc from 'lume/plugins/toc.ts';
 
 // Pass options to markdown-it plugins
 const markdown = {
