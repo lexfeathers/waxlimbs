@@ -91,11 +91,11 @@ site.use(
 site.add('/assets')
 	.add('/uploads');
 
-// Mark all external links
 site.process([".html"], (pages) => {
 	for (const page of pages) {
 		const externalLinks = page.document.querySelectorAll('a[href^="http"]');
 		
+		// Mark all external links
 		externalLinks.forEach((link) => {
 			link.classList.add('external');
 			link.setAttribute('_target', '_blank');
