@@ -41,12 +41,14 @@ const site = lume(
 	}
 );
 
-site.use(
-		icons({
+site.use(icons({
 			folder: '/assets/icons',
-		})
-	)
-	.use(esbuild())
+		}))
+	.use(esbuild({
+		options: {
+			minify: false, 
+		}		
+	}))
 	.use(basePath())
 	.use(resolveUrls())
 	.use(slugify_urls())
@@ -100,6 +102,17 @@ site.process([".html"], (pages) => {
 			link.classList.add('external');
 			link.setAttribute('_target', '_blank');
 		});
+
+		// Set social icons
+		const socialIcons = page.document.querySelectorAll('.social-icon');
+		for (const icon of socialIcons) {
+			page.document.querySelectorAll('[data-icon=' + '"' + `${icon.getAttribute('data-icon')}` + '"]')
+			.forEach(icon => {
+				(icon as HTMLElement).setAttribute(
+					"style", `mask: var(--icon-${icon.getAttribute('data-icon')?.toLowerCase()})`
+				);
+			});
+		};
 	}
 });
 

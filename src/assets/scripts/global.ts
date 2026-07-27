@@ -7,11 +7,3 @@ document.getElementById('hamburger')?.addEventListener('click', () => {
 	hamburgerIcon?.classList.toggle('icon-close');
 });
 
-// Social icons
-const socialIcons = document.querySelectorAll('.social-icon');
-for (const icon of socialIcons) {
-	document.querySelectorAll('[data-icon=' + '"' + `${icon.getAttribute('data-icon')}` + '"]')
-	.forEach(icon => {
-		(icon as HTMLElement).style.mask = `var(--icon-${icon.getAttribute('data-icon')?.toLowerCase()})`;
-	});
-};
