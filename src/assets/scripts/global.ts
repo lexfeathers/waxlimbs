@@ -7,36 +7,12 @@ document.getElementById('hamburger')?.addEventListener('click', () => {
 	hamburgerIcon?.classList.toggle('icon-close');
 });
 
-// Socials
-const socials = {
-	iconInstagram: document.querySelectorAll('.Instagram'),
-	iconTiktok: document.querySelectorAll('.Tiktok'),
-	iconYoutube: document.querySelectorAll('.YouTube'),
-	iconBsky: document.querySelectorAll('.Bsky'),
-	iconMastodon: document.querySelectorAll('.Mastodon'),
-	iconBandcamp: document.querySelectorAll('.Bandcamp'),
-	iconRSS: document.querySelectorAll('.RSS'),
-};
-
-// Set social icons
-socials.iconInstagram.forEach((icon: Element) => {
-	(icon as HTMLDivElement).style.mask = `var(--icon-instagram)`;
-});
-socials.iconTiktok.forEach((icon: Element) => {
-	(icon as HTMLDivElement).style.mask = `var(--icon-tiktok)`;
-});
-socials.iconYoutube.forEach((icon: Element) => {
-	(icon as HTMLDivElement).style.mask = `var(--icon-youtube)`;
-});
-socials.iconBsky.forEach((icon: Element) => {
-	(icon as HTMLDivElement).style.mask = `var(--icon-bsky)`;
-});
-socials.iconMastodon.forEach((icon: Element) => {
-	(icon as HTMLDivElement).style.mask = `var(--icon-mastodon)`;
-});
-socials.iconBandcamp.forEach((icon: Element) => {
-	(icon as HTMLDivElement).style.mask = `var(--icon-bandcamp)`;
-});
-socials.iconRSS.forEach((icon: Element) => {
-	(icon as HTMLDivElement).style.mask = `var(--icon-rss)`;
-});
+// Social icons
+const icons = document.querySelectorAll('.social-icon');
+for (const icon of icons) {
+	document.querySelectorAll(
+		'[data-icon=' + '"' + `${icon.getAttribute('data-icon')}` + '"]'
+	).forEach(icon => {
+		(icon as HTMLElement).style.mask = `var(--icon-${icon.getAttribute('data-icon')?.toLowerCase()})`;
+	});
+}

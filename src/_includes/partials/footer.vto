@@ -4,7 +4,7 @@
 <div class="footer-icons">
     {{ for item of site.socials }}
         <a href="{{ item.link }}" title="{{ item.name }}" target="_blank">
-            <div class="{{ item.name }} social-icon"></div>
+            <div data-icon="{{ item.name }}" class="social-icon"></div>
         </a>
     {{ /for }}
 </div>
