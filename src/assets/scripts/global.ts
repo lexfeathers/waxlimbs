@@ -1,16 +1,5 @@
 import './lightbox.ts';
 
-markExternalLinks();
-
-function markExternalLinks() {
-	document.querySelectorAll('a').forEach((link: HTMLAnchorElement) => {
-		if (link.hostname != globalThis.location.hostname) {
-			link.classList.add('external');
-			link.target = '_blank';
-		}
-	});
-}
-
 // Mobile menu handling
 const hamburgerIcon = document.getElementById('hamburger');
 document.getElementById('hamburger')?.addEventListener('click', () => {

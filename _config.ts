@@ -34,7 +34,7 @@ const markdown = {
 const site = lume(
 	{
 		src: './src',
-		location: new URL('http://waxlimbs.com'),
+		location: new URL('localhost:3000'),
 	},
 	{
 		markdown,
@@ -42,53 +42,65 @@ const site = lume(
 );
 
 site.use(
-	icons({
-		folder: '/assets/icons',
-	})
-);
-site.use(esbuild());
-site.use(basePath());
-site.use(resolveUrls());
-site.use(slugify_urls());
-site.use(date());
-site.use(
-	favicon({
-		input: '/assets/icons/Mask_White_Stroke_Thicker_Favicon.svg',
-	})
-);
-site.use(metas());
-site.use(
-	feed({
-		output: '/feed.rss',
-		query: 'type=post',
-		sort: 'date=desc',
-		info: {
-			title: '=site.title',
-			description: '=site.description',
-			lang: 'en',
-			generator: true,
-			authorName: 'Waxlimbs',
-			authorUrl: 'https://waxlimbs.com',
-		},
-		items: {
-			title: '=title',
-			description: '=excerpt',
-			published: '=date',
-			image: '=cover',
-			content: '=children',
-			authorName: '=author',
-		},
-	})
-);
-site.use(sitemap());
-site.use(extractOrder());
-site.use(
-	toc({
-		anchor: false,
-	})
-);
+		icons({
+			folder: '/assets/icons',
+		})
+	)
+	.use(esbuild())
+	.use(basePath())
+	.use(resolveUrls())
+	.use(slugify_urls())
+	.use(date())
+	.use(
+		favicon({
+			input: '/assets/icons/Mask_White_Stroke_Thicker_Favicon.svg',
+		})
+	)
+	.use(metas())
+	.use(
+		feed({
+			output: '/feed.rss',
+			query: 'type=post',
+			sort: 'date=desc',
+			info: {
+				title: '=site.title',
+				description: '=site.description',
+				lang: 'en',
+				generator: true,
+				authorName: 'Waxlimbs',
+				authorUrl: 'https://waxlimbs.com',
+			},
+			items: {
+				title: '=title',
+				description: '=excerpt',
+				published: '=date',
+				image: '=cover',
+				content: '=children',
+				authorName: '=author',
+			},
+		})
+	)
+	.use(sitemap())
+	.use(extractOrder())
+	.use(
+		toc({
+			anchor: false,
+		})
+	);
 
-site.add('/assets');
-site.add('/uploads');
+site.add('/assets')
+	.add('/uploads');
+
+// Mark all external links
+site.process([".html"], (pages) => {
+	for (const page of pages) {
+		const externalLinks = page.document.querySelectorAll('a[href^="http"]');
+		
+		externalLinks.forEach((link) => {
+			link.classList.add('external');
+			link.setAttribute('_target', '_blank');
+		});
+	}
+});
 
 export default site;
