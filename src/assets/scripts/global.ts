@@ -14,4 +14,4 @@ for (const icon of socialIcons) {
 	.forEach(icon => {
 		(icon as HTMLElement).style.mask = `var(--icon-${icon.getAttribute('data-icon')?.toLowerCase()})`;
 	});
-}
+};
