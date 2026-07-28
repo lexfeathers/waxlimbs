@@ -100,7 +100,7 @@ site.process([".html"], (pages) => {
 		const externalLinks = page.document.querySelectorAll('a[href^="http"]');
 		externalLinks.forEach((link) => {
 			link.classList.add('external');
-			link.setAttribute('_target', '_blank');
+			link.setAttribute('target', '_blank');
 		});
 
 		// Set social icons
@@ -113,7 +113,7 @@ site.process([".html"], (pages) => {
 				);
 			});
 		};
-		
+
 	}
 });
 
