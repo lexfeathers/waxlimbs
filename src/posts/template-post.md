@@ -3,7 +3,7 @@ title: This is the Title # If you need a number character (ie: 4) in the title, 
 author: Your Name
 date: 2026-01-03T12:00 # YYYY-MM-DD format. Remember to add T12:00 to the end.
 tags: ['tag 1', 'tag 2', 'And so on']
-cover: /uploads/NXNE2024_OrlandoDaSilva/waxlimbs_nxne2024_1_crop.jpg # Used for metadata only
+cover: /uploads/NXNE2024_OrlandoDaSilva/waxlimbs_nxne2024_1_cropVertical.jpg # Used for metadata only
 show_table_of_contents: false # Whether to display a table of contents at the top of the post. Useful for longer posts.
 draft: true # Set this to false to show the post on the entries page
 ---
