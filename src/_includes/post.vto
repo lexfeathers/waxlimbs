@@ -24,3 +24,11 @@ layout: layout.vto
 <article>
     {{ content |> safe }}
 </article>
+
+{{ if search.pages("type=post draft=false")?.length }}
+    <div class="separator"></div>
+{{ /if }}
+
+{{ await comp.LatestPosts({
+    count: 2
+}) }}
