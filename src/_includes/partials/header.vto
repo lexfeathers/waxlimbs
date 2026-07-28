@@ -19,11 +19,14 @@
 		</button>
 
 		<div id="main-menu">
+            {{# Main nav menu #}}
             <a href="/" title="home">HOME</a>
-            <a href="https://shop.waxlimbs.com" target="_blank" title="Our standalone merch store">MERCH</a>
             {{ for page of search.pages("type=page draft=false", "order=asc",) }}
                 <a href="{{ page.url |> url }}">{{ page.title |> toUpperCase() }}</a>
             {{ /for }}
+            <a href="https://shop.waxlimbs.com" target="_blank" title="Our standalone merch store">MERCH</a>
+
+            {{# Utility Links (hidden on mobile) #}}
             {{ if search.pages("type=utility").length }}
                 <hr class="translucent mobile-only">
                 <div class="mobile-only utility-menu__mobile">
