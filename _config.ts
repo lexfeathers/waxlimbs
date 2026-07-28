@@ -95,9 +95,9 @@ site.add('/assets')
 
 site.process([".html"], (pages) => {
 	for (const page of pages) {
-		const externalLinks = page.document.querySelectorAll('a[href^="http"]');
-		
+
 		// Mark all external links
+		const externalLinks = page.document.querySelectorAll('a[href^="http"]');
 		externalLinks.forEach((link) => {
 			link.classList.add('external');
 			link.setAttribute('_target', '_blank');
@@ -113,6 +113,7 @@ site.process([".html"], (pages) => {
 				);
 			});
 		};
+		
 	}
 });
 
