@@ -15,9 +15,14 @@
 </form>
 
 <script>
-if (Math.random() <= 0.1) {
+const randomNumber = Math.random();
+if (randomNumber <= 0.04) {
 	document.querySelector('#name').setAttribute('placeholder', 'Beef Pingu Corbett Music');
 	document.querySelector('#email').setAttribute('placeholder', 'beef-baby@givemefood.com');
 	document.querySelector('#message').setAttribute('placeholder', 'tell waxlimbs to buy beef a treat :3c');
+} else if (randomNumber >= 0.05 && randomNumber <= 0.09) {
+	document.querySelector('#name').setAttribute('placeholder', 'paul');
+	document.querySelector('#email').setAttribute('placeholder', 'paul@paulpaulpaul.com');
+	document.querySelector('#message').setAttribute('placeholder', 'paul paul paul paul paul paul paul paul paul paul paul paul paul paul paul paul paul paul');
 }
 </script>
