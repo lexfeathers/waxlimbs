@@ -76,6 +76,15 @@ html {
 .center {
 	text-align: center;
 }
+.spread {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+
+	@media (width <= 749px) {
+		flex-direction: column;
+	}
+}
 
 .desktop-only {
 	@media (width <= 749px) {
@@ -694,6 +703,109 @@ a {
 
 	&:active {
 		background-color: none;
+	}
+}
+
+.latest-posts__title h2 {
+	display: flex;
+	align-items: baseline;
+	gap: calc(var(--spacing) * 3);
+	margin: 0;
+
+	&::before {
+		content: '';
+		display: block;
+		margin: auto;
+		width: 2rem;
+		height: 2rem;
+		background-color: var(--color-primary);
+		mask: var(--icon-clock);
+		mask-position: center;
+		mask-repeat: no-repeat;
+	}
+
+	@media (width <= 749px) {
+		margin-bottom: 1rem;
+	}
+}
+.directory {
+	padding: 1rem 0;
+}
+.card-post {
+	display: flex;
+	align-items: center;
+	margin: 2rem 0;
+
+	&:not(:last-of-type) {
+		padding-bottom: 2rem;
+		border-bottom: 1px solid var(--color-primary-fainter);
+	}
+	
+	.card-image__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 12rem;
+		overflow: hidden;
+	}
+	img.card-image {
+		margin: auto;
+		min-width: 100%;
+		min-height: 100%;
+		object-fit: cover;
+		aspect-ratio: 1/1;
+		border-radius: var(--radius);
+	}
+	
+	.card-post__link {
+		text-decoration: none;
+		padding-left: 1rem;
+
+		.date {
+			color: var(--color-secondary-faint);
+			display: flex;
+			align-items: flex-end;
+			gap: 1ch;
+
+			&::before {
+				content: '';
+				display: inline-block;
+				width: 2ch;
+				aspect-ratio: 1;
+				margin: auto 0;
+				mask: var(--icon-envelope);
+				mask-position: center;
+				mask-repeat: no-repeat;
+				background-color: var(--color-secondary-faint);
+			}
+		}
+		
+		h2 {
+			margin: 0 0 1rem;
+		}
+		
+		.card-excerpt {
+			color: var(--color-primary);
+		}
+		
+	}
+
+	@media (width <= 749px) {
+		flex-direction: column;
+		
+		.card-image__link {
+			max-width: 100%;
+		}
+		.card-post__link {
+			padding-left: 0;
+			padding-top: 1.5rem;
+
+			.date {
+				position: relative;
+				display: inline-flex;
+				flex-wrap: wrap;
+			}
+		}
 	}
 }
 

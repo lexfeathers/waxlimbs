@@ -1,0 +1,26 @@
+{{# 
+
+    Takes the following inputs:
+
+    count // the number of posts displayed
+
+ #}}
+
+{{ set latestPosts = search.pages("type=post draft=false", "published=desc", count) }}
+
+{{ if latestPosts?.length }}
+    <div class="latest-posts-container">
+        <div class="latest-posts" style="margin-top: 2rem">
+            <div class="latest-posts__title spread">
+                <h2>Latest entries</h2>
+                <a href="/pages/blog">View all</a>
+            </div>
+
+            <div class="directory">
+                {{ for post of latestPosts }}
+                    {{ include "partials/card-post.vto" { post } }}
+                {{ /for }}
+            </div>
+        </div>
+    </div>
+{{ /if }}

@@ -1,0 +1,55 @@
+<div class="card-post">
+    <a
+        class="card-image__link{{ if !post.image }} card-image__link____noimage{{ /if }}"
+        href="{{ post.url }}"
+    >
+        {{ if post.cover }}
+            <img
+                class="card-image"
+                src="{{ post.cover }}"
+                alt="
+                    {{ if post.image_alt }}
+                        {{ post.image_alt }}
+                    {{ else if post.image_caption }}
+                        {{ post.image_caption }}
+                    {{ else }}
+                        No caption
+                    {{ /if }}
+                "
+            >
+        {{ else }}
+            <img
+                transform-images="webp 100@2"
+                class="card-image"
+                src="/assets/images/Mask_outlines_white.png"
+                alt="
+                    {{ if post.image_alt }}
+                        {{ post.image_alt }}
+                    {{ else if post.image_caption }}
+                        {{ post.image_caption }}
+                    {{ else }}
+                        No caption
+                    {{ /if }}
+                "
+            >
+        {{ /if }}
+    </a>
+    <a class="card-post__link" href="{{ post.url }}">
+        <h2 class="card-title">
+            {{ post.title }}
+        </h2>
+        <p class="date">
+            <time datetime="{{ post.date |> date("HUMAN_DATE") }}">
+                {{ post.date |> date("HUMAN_DATE") }}
+            </time>
+            by {{ post.author }}
+        </p>
+        <div class="card-excerpt">
+            {{ if post.excerpt }}
+                {{ post.excerpt |> safe }}
+            {{ else }}
+                {{ post.content |> safe |> split(" ") |> slice(0, 22) |> join(" ") |> trim() |> concat("[...]") }}
+            {{ /if }}
+        </div>
+    </a>
+</div>
