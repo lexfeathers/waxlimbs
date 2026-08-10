@@ -52,6 +52,26 @@
 	--shadow: 0px 4px 8px var(var(--color-background-darker));
 }
 
+@media (prefers-color-scheme: light) {
+	:root {
+		--color-primary: #141414;
+		--color-background: #fffae8;
+		--color-secondary: #e8005d;
+		--color-tertiary: rgb(145, 171, 0);
+		--color-primary-faint: color-mix(
+			in srgb,
+			var(--color-primary),
+			var(--color-background) 40%
+		);
+	}
+	body {
+		font-family: 'Source Code Pro', 'Fira Code', monospace !important;
+	}
+	blockquote {
+		font-weight: bold !important;
+	}
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -111,6 +131,10 @@ html {
 		display: none;
 	}
 }
+
+.external {
+	margin-right: 1ch;
+}
 .external::after {
 	content: '↗';
 	margin-left: calc(var(--spacing) / 2);
@@ -119,6 +143,7 @@ html {
 	position: absolute;
 	translate: 0 -0.45ch;
 }
+
 .translucent {
 	opacity: var(--translucent);
 }

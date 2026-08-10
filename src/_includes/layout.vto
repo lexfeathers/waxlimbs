@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
     <link rel="alternate" type="application/rss+xml" title="Waxlimbs" href="/feed.rss">
     <meta name="robots" content="noai, noimageai">
     <link rel="stylesheet" href="/assets/styles.css">
@@ -21,7 +23,7 @@
                 <h1 class="page-title" no-toc>
                     {{ if title == "home" }}
                         {{# {{- site.title |> toUpperCase() -}} #}}
-                        <img src="/assets/images/wordmark_white.png" alt="Waxlimbs" class="wordmark">
+                        <img src="/assets/images/wordmark_white_shadow.png" alt="Waxlimbs" class="wordmark">
                     {{ else }}
                         {{- title |> toUpperCase() -}}
                     {{ /if }}
