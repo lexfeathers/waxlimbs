@@ -61,7 +61,8 @@
 					"title": "Mirlo",
 					"url": "https://mirlo.space/waxlimbs/release/by-the-neck"
 				}
-			]
+			],
+			"lyrics": "/lyrics/by-the-neck/by-the-neck"
 		},
 		{
 			"title": "Across The Coals",
@@ -84,7 +85,8 @@
 					"title": "Mirlo",
 					"url": "https://mirlo.space/waxlimbs/release/across-the-coals"
 				}
-			]
+			],
+			"lyrics": "/lyrics/across-the-coals/across-the-coals"
 		},
 		{
 			"title": "Where Lilies Grew",
@@ -111,51 +113,51 @@
 			"tracklist" : [
 				{ 
 					"title": "Dead In The Water",
-					"lyrics": ""
+					"lyrics": "/lyrics/where-lilies-grew/dead-in-the-water"
 				},
 				{ 
 					"title": "The Stone Inside",
-					"lyrics": ""
+					"lyrics": "/lyrics/where-lilies-grew/the-stone-inside"
 				},
 				{ 
 					"title": "Remnants",
-					"lyrics": ""
+					"lyrics": "/lyrics/where-lilies-grew/remnants"
 				},
 				{ 
 					"title": "Watcher",
-					"lyrics": ""
+					"lyrics": "/lyrics/where-lilies-grew/watcher"
 				},
 				{ 
 					"title": "Spitting And Thrashing",
-					"lyrics": ""
+					"lyrics": "/lyrics/where-lilies-grew/spitting-and-thrashing"
 				},
 				{ 
 					"title": "It Speaks",
-					"lyrics": ""
+					"lyrics": "/lyrics/where-lilies-grew/it-speaks"
 				},
 				{ 
 					"title": "Earth Is Unmade",
-					"lyrics": ""
+					"lyrics": "/lyrics/where-lilies-grew/earth-is-unmade"
 				},
 				{ 
 					"title": "Violent Age",
-					"lyrics": ""
+					"lyrics": "/lyrics/where-lilies-grew/violent-age"
 				},
 				{ 
 					"title": "It Has A Name",
-					"lyrics": ""
+					"lyrics": "/lyrics/where-lilies-grew/it-has-a-name"
 				},
 				{ 
 					"title": "Briar",
-					"lyrics": ""
+					"lyrics": "/lyrics/where-lilies-grew/briar"
 				},
 				{ 
 					"title": "Fire At Last",
-					"lyrics": ""
+					"lyrics": "/lyrics/where-lilies-grew/fire-at-last"
 				},
 				{ 
 					"title": "Succession",
-					"lyrics": ""
+					"lyrics": "/lyrics/where-lilies-grew/succession"
 				}
 			]
 		},
@@ -180,7 +182,8 @@
 					"title": "Mirlo",
 					"url": "https://mirlo.space/waxlimbs/release/need"
 				}
-			]
+			],
+			"lyrics": "/lyrics/need/need"
 		},
 		{
 			"title": "Seer",
@@ -203,7 +206,8 @@
 					"title": "Mirlo",
 					"url": "https://mirlo.space/waxlimbs/release/seer"
 				}
-			]
+			],
+			"lyrics": "/lyrics/seer/seer"
 		},
 		{
 			"title": "Witnessing",
@@ -226,7 +230,8 @@
 					"title": "Mirlo",
 					"url": "https://mirlo.space/waxlimbs/release/witnessing"
 				}
-			]
+			],
+			"lyrics": "/lyrics/witnessing/witnessing"
 		},
 		{
 			"title": "Sheltering Night",
@@ -249,7 +254,8 @@
 					"title": "Mirlo",
 					"url": "https://mirlo.space/waxlimbs/release/sheltering-night"
 				}
-			]
+			],
+			"lyrics": "/lyrics/sheltering-night/sheltering-night"
 		},
 		{
 			"title": "Live at Desert Fish",
@@ -276,11 +282,11 @@
 			"tracklist": [
 				{ 
 					"title": "Watercolour Sun // With Every Dress",
-					"lyrics": ""
+					"lyrics": "/lyrics/the-autumn-bell/tracklist"
 				},
 				{ 
 					"title": "Chase The Moon",
-					"lyrics": ""
+					"lyrics": "/lyrics/the-autumn-bell/chase-the-moon"
 				}
 			]
 		},
@@ -309,35 +315,35 @@
 			"tracklist": [
 				{ 
 					"title": "After The Wreck",
-					"lyrics": ""
+					"lyrics": "/lyrics/the-autumn-bell/after-the-wreck"
 				},
 				{ 
 					"title": "Tidal Wave",
-					"lyrics": ""
+					"lyrics": "/lyrics/the-autumn-bell/tidal-wave"
 				},
 				{ 
 					"title": "Negative Value",
-					"lyrics": ""
+					"lyrics": "/lyrics/the-autumn-bell/negative-value"
 				},
 				{ 
 					"title": "With Every Dress",
-					"lyrics": ""
+					"lyrics": "/lyrics/the-autumn-bell/with-every-dress"
 				},
 				{ 
 					"title": "In The Hospital",
-					"lyrics": ""
+					"lyrics": "/lyrics/the-autumn-bell/in-the-hospital"
 				},
 				{ 
 					"title": "Waking Up",
-					"lyrics": ""
+					"lyrics": "/lyrics/the-autumn-bell/waking-up"
 				},
 				{ 
 					"title": "Chase The Moon",
-					"lyrics": ""
+					"lyrics": "/lyrics/the-autumn-bell/chase-the-moon"
 				},
 				{ 
 					"title": "Watercolour Sun",
-					"lyrics": ""
+					"lyrics": "/lyrics/the-autumn-bell/watercolour-sun"
 				}
 			]
 		},

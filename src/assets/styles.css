@@ -419,6 +419,35 @@ h6 {
 	}
 }
 
+.lyrics-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	column-gap: 1ch;
+}
+
+a:has(.icon-lyrics) {
+	text-decoration: none;
+}
+.icon-lyrics {
+	display: flex;
+	align-items: center;
+	
+	&::before {
+		content: '';
+		width: 1.5rem;
+		aspect-ratio: 1/1;
+		mask: var(--icon-text);
+		mask-repeat: no-repeat;
+		mask-position: center;
+		background-color: var(--color-secondary);
+
+		@media (width <= 749px) {
+			width: 2.5rem;
+		}
+	}
+}
+
 iframe[title='YouTube video player'],
 iframe[src*='bandcamp.com'] {
 	display: block;

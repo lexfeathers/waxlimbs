@@ -56,10 +56,12 @@ draft: false
                         <summary><h3 class="font-medium">Track list</h3></summary>
                         <ol>
                             {{ for track of release.tracklist }}
-                                <li>{{ track.title }}{{ if track.lyrics?.length }} - <a href="{{ track.lyrics |> url }}">lyrics</a>{{ /if }}</li>
+                                <li class="lyrics-item"><a href="{{ track.lyrics |> url }}" title="Lyrics"><span class="icon-lyrics"></span></a>{{ track.title }}{{ if track.lyrics?.length }}{{ /if }}</li>
                             {{ /for }}
                         </ol>    
                     </details>
+                {{ else if release.lyrics }}
+                    <p><a href="{{ release.lyrics |> url }}" title="Lyrics"><span class="icon-lyrics">Lyrics</span></a></p>
                 {{ /if }}
             </div>
         </div>
@@ -80,6 +82,8 @@ draft: false
     }
 
     figure {
+        display: flex;
+        align-items: center;
         width: 200px;
         margin: 0;
 
