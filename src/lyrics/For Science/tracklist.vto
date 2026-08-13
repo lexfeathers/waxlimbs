@@ -1,0 +1,8 @@
+---
+title: "For Science!"
+layout: layout.vto
+release_title: ignore
+---
+{{ set tracklist = search.pages("release_title='For Science!'", "order=asc") }}
+
+{{ include "partials/tracklist.vto" }}

@@ -107,6 +107,56 @@
 					"title": "Mirlo",
 					"url": "https://mirlo.space/waxlimbs/release/where-lilies-grew"
 				}
+			],
+			"tracklist" : [
+				{ 
+					"title": "Dead In The Water",
+					"lyrics": ""
+				},
+				{ 
+					"title": "The Stone Inside",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Remnants",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Watcher",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Spitting And Thrashing",
+					"lyrics": ""
+				},
+				{ 
+					"title": "It Speaks",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Earth Is Unmade",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Violent Age",
+					"lyrics": ""
+				},
+				{ 
+					"title": "It Has A Name",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Briar",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Fire At Last",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Succession",
+					"lyrics": ""
+				}
 			]
 		},
 		{
@@ -222,6 +272,16 @@
 					"title": "Mirlo",
 					"url": "https://mirlo.space/waxlimbs/release/live-at-desert-fish"
 				}
+			],
+			"tracklist": [
+				{ 
+					"title": "Watercolour Sun // With Every Dress",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Chase The Moon",
+					"lyrics": ""
+				}
 			]
 		},
 		{
@@ -245,6 +305,40 @@
 					"title": "Mirlo",
 					"url": "https://mirlo.space/waxlimbs/release/the-autumn-bell"
 				}
+			],
+			"tracklist": [
+				{ 
+					"title": "After The Wreck",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Tidal Wave",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Negative Value",
+					"lyrics": ""
+				},
+				{ 
+					"title": "With Every Dress",
+					"lyrics": ""
+				},
+				{ 
+					"title": "In The Hospital",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Waking Up",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Chase The Moon",
+					"lyrics": ""
+				},
+				{ 
+					"title": "Watercolour Sun",
+					"lyrics": ""
+				}
 			]
 		},
 		{
@@ -267,6 +361,36 @@
 				{
 					"title": "Mirlo",
 					"url": "https://mirlo.space/waxlimbs/release/for-science"
+				}
+			],
+			"tracklist": [
+				{
+					"title": "For Science!",
+					"lyrics": "/lyrics/for-science/for-science"
+				},
+				{
+					"title": "The Joy Of Floating",
+					"lyrics": "/lyrics/for-science/the-joy-of-floating"
+				},
+				{
+					"title": "Molecules",
+					"lyrics": "/lyrics/for-science/molecules"
+				},
+				{
+					"title": "Faces In The Fog ft. Olivia Cox",
+					"lyrics": "/lyrics/for-science/faces-in-the-fog"
+				},
+				{
+					"title": "The Ashes",
+					"lyrics": "/lyrics/for-science/the-ashes"
+				},
+				{
+					"title": "Broken Wing",
+					"lyrics": "/lyrics/for-science/broken-wing"
+				},
+				{
+					"title": "A Way Out",
+					"lyrics": "/lyrics/for-science/a-way-out"
 				}
 			]
 		}

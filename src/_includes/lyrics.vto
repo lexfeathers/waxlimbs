@@ -1,0 +1,29 @@
+---
+layout: layout.vto
+---
+<p>
+    {{ if release_title }}
+        <span>From <em><a href="../tracklist">{{ release_title }}</a></em></span>
+        <br>
+    {{ /if }}
+    <span>Released: {{ date |> date("HUMAN_DATE")}}</span>
+    <br>
+    <span>
+        Written by 
+        {{ for name of author }}
+            <span class="author-name">{{ name }}</span>
+        {{ /for }}
+    </span>
+</p>
+
+<hr class="translucent">
+
+<pre id="lyrics">{{ content |> safe }}</pre>
+
+<hr class="translucent">
+
+{{ if release_title }}
+    <a class="button-inline" href="../tracklist">< release</a>
+{{ else }}
+    <a class="button-inline" href="../lyrics">< lyrics</a>
+{{ /if }}

@@ -1,0 +1,22 @@
+---
+title: lyrics
+type: utility
+draft: false
+---
+<p class="font-small">All songs, from newest to oldest</p>
+
+{{ set tracks = search.pages("type=lyrics draft=false", "order=asc release_title") }}
+{{ set releases = search.values("release_title", "release_title!=ignore") }}
+
+{{ for title of releases }}
+    <h2 class="font-medium">{{ title }}</h2>
+    <ol>    
+        {{ for track of tracks }}
+            {{ if track.release_title == title }}
+                <li>
+                    <a href="{{ track.url }}">{{ track.title }}</a>
+                </li>
+            {{ /if }}
+        {{ /for }}
+    </ol>
+{{ /for }}

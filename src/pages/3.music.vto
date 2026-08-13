@@ -50,6 +50,17 @@ draft: false
                         <a href="{{ link.url |> url }}">{{ link.title }}</a>
                     </span>
                 {{ /for }}
+
+                {{ if release.tracklist?.length }}
+                    <details>
+                        <summary><h3 class="font-medium">Track list</h3></summary>
+                        <ol>
+                            {{ for track of release.tracklist }}
+                                <li>{{ track.title }}{{ if track.lyrics?.length }} - <a href="{{ track.lyrics |> url }}">lyrics</a>{{ /if }}</li>
+                            {{ /for }}
+                        </ol>    
+                    </details>
+                {{ /if }}
             </div>
         </div>
     {{ /for }}

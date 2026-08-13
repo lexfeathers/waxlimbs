@@ -1,0 +1,11 @@
+<p>Released: {{ date |> date("HUMAN_DATE") }}</p>
+
+<ol>
+    {{ for track of tracklist }}
+            <li><a href="{{ track.url |> url }}">{{ track.title }}</a></li>
+    {{ /for }}
+</ol>
+
+<hr class="translucent">
+
+<a class="button-inline" href="/pages/lyrics">< lyrics</a>
