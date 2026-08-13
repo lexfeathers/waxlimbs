@@ -64,11 +64,17 @@
 			var(--color-background) 40%
 		);
 	}
-	body {
-		font-family: 'Source Code Pro', 'Fira Code', monospace !important;
-	}
 	blockquote {
 		font-weight: bold !important;
+	}
+	body,
+	pre, 
+	#lyrics,
+	input,
+	button,
+	.button,
+	.button-inline {
+		font-family: 'Source Code Pro', 'Fira Code', monospace !important;
 	}
 }
 
