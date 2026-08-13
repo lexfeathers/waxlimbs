@@ -3,7 +3,7 @@ title: lyrics
 type: utility
 draft: false
 ---
-<p class="font-small">All songs, from newest to oldest</p>
+<p class="font-small">All songs, from oldest to newest</p>
 
 {{ set tracks = search.pages("type=lyrics draft=false", "order=asc release_title") }}
 {{ set releases = search.values("release_title", "release_title!=ignore") }}
