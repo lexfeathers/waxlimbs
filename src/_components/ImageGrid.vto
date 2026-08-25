@@ -20,9 +20,9 @@
   {{# Loop through each provided grid-item in the grid array #}}
   {{ for item of grid }}
   <figure data-type="image" class="grid-item shadow-hover">
-    
-    <img src="{{ item.image_url }}" alt="{{ item.image_alt }}">
-
+    <noscript><a href="{{item.image_url}}"></noscript>
+        <img src="{{ item.image_url }}" alt="{{ item.image_alt }}">
+    <noscript></a></noscript>
     <figcaption>
         {{ if item.image_caption }}
             {{ item.image_caption |> md }}
