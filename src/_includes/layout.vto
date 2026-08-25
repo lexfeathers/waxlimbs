@@ -21,12 +21,12 @@
         <main id="main"> 
             <section id="page-content">
                 <h1 class="page-title" no-toc>
-                    {{ if title == "home" }}
+                    {{- if title == "home" -}}
                         {{# {{- site.title |> toUpperCase() -}} #}}
                         <img src="/assets/images/wordmark_white_shadow.png" alt="Waxlimbs" class="wordmark">
-                    {{ else }}
+                    {{- else -}}
                         {{- title |> toUpperCase() -}}
-                    {{ /if }}
+                    {{- /if -}}
                 </h1>
                 {{ content |> safe }}
             </section>
