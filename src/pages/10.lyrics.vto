@@ -3,20 +3,27 @@ title: lyrics
 type: utility
 draft: false
 ---
-<p class="font-small">All songs, from oldest to newest</p>
+<p class="font-small">All songs, from newest to oldest</p>
 
-{{ set tracks = search.pages("type=lyrics draft=false", "order=asc release_title") }}
-{{ set releases = search.values("release_title", "release_title!=ignore") }}
+{{ set tracks = search.pages("type=lyrics draft=false") }}
+{{> 
+    tracks.sort((a,b) => {
+        let sort = b.date - a.date;
+        if (sort == 0) sort = a.order - b.order;
+        return sort;
+    });
+}}
+{{ set currentRelease = "" }}
 
-{{ for title of releases }}
-    <h2 class="font-medium">{{ title }}</h2>
-    <ol>    
-        {{ for track of tracks }}
-            {{ if track.release_title == title }}
-                <li>
-                    <a href="{{ track.url }}">{{ track.title }}</a>
-                </li>
-            {{ /if }}
-        {{ /for }}
-    </ol>
+{{ for track of tracks }}
+    {{ if track.release_title != currentRelease }}
+        {{ if currentRelease != "" }}       
+            </ol>
+        {{ /if }}
+        {{ set currentRelease = track.release_title }}
+        <h2 class="font-medium">{{ track.release_title }} ({{ track.date |> date('yyyy') }})</h2>
+        <ol>
+    {{ /if }}
+    <li class="lyrics-list-item"><a href="{{ track.url }}">{{ track.title }}</a></li>
 {{ /for }}
+</ol>

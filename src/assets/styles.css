@@ -68,7 +68,7 @@
 		font-weight: bold !important;
 	}
 	body,
-	pre, 
+	pre,
 	#lyrics,
 	input,
 	button,
@@ -292,7 +292,7 @@ ul {
 
 ol {
 	margin-bottom: calc(var(--spacing) * 4);
-	
+
 	li {
 		list-style-type: unset;
 		padding-left: 1ch;
@@ -300,7 +300,24 @@ ol {
 		&::before {
 			content: unset;
 		}
-	};
+
+		&:only-child {
+			list-style-type: none;
+			&::marker {
+				content: '⟐ ';
+			}
+		}
+	}
+}
+
+ol {
+	&:has(.lyrics-item) {
+		padding-left: 0;
+	}
+
+	&:has(.lyrics-list-item) {
+		margin-top: 0;
+	}
 }
 
 details {
@@ -423,7 +440,6 @@ h6 {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	column-gap: 1ch;
 }
 
 a:has(.icon-lyrics) {
@@ -432,7 +448,7 @@ a:has(.icon-lyrics) {
 .icon-lyrics {
 	display: flex;
 	align-items: center;
-	
+
 	&::before {
 		content: '';
 		width: 1.5rem;
@@ -441,6 +457,7 @@ a:has(.icon-lyrics) {
 		mask-repeat: no-repeat;
 		mask-position: center;
 		background-color: var(--color-secondary);
+		margin-right: 1ch;
 
 		@media (width <= 749px) {
 			width: 2.5rem;
@@ -681,7 +698,7 @@ form {
 	row-gap: calc(var(--spacing) * 4);
 }
 
-form input:not([type="submit"]),
+form input:not([type='submit']),
 textarea {
 	padding: calc(var(--spacing) * 2);
 	line-height: calc(var(--spacing) * 4);
@@ -828,7 +845,7 @@ a {
 		padding-bottom: 2rem;
 		border-bottom: 1px solid var(--color-primary-fainter);
 	}
-	
+
 	.card-image__link {
 		display: flex;
 		justify-content: center;
@@ -844,7 +861,7 @@ a {
 		aspect-ratio: 1/1;
 		border-radius: var(--radius);
 	}
-	
+
 	.card-post__link {
 		text-decoration: none;
 		padding-left: 1rem;
@@ -867,20 +884,19 @@ a {
 				background-color: var(--color-secondary-faint);
 			}
 		}
-		
+
 		h2 {
 			margin: 0 0 1rem;
 		}
-		
+
 		.card-excerpt {
 			color: var(--color-primary);
 		}
-		
 	}
 
 	@media (width <= 749px) {
 		flex-direction: column;
-		
+
 		.card-image__link {
 			max-width: 100%;
 		}
@@ -900,19 +916,23 @@ a {
 .author-name {
 	&:not(:last-child) {
 		&::after {
-			content: ",";
+			content: ',';
 		}
 	}
+}
+
+p.lyrics-link {
+	margin-bottom: 0;
 }
 
 #lyrics {
 	font-family: 'Source Code Pro Light';
 	white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;    
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
-	
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+
 	p {
 		margin: 0;
 	}

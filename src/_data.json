@@ -96,6 +96,7 @@
 			"attribution_link": "https://emmaembur.my.canva.site/emma-embur-home",
 			"date": "2024-10-04T12:00",
 			"type": "Album",
+			"lyrics": "/lyrics/where-lilies-grew/tracklist",
 			"links": [
 				{
 					"title": "Bandcamp",
@@ -110,52 +111,52 @@
 					"url": "https://mirlo.space/waxlimbs/release/where-lilies-grew"
 				}
 			],
-			"tracklist" : [
-				{ 
+			"tracklist": [
+				{
 					"title": "Dead In The Water",
 					"lyrics": "/lyrics/where-lilies-grew/dead-in-the-water"
 				},
-				{ 
+				{
 					"title": "The Stone Inside",
 					"lyrics": "/lyrics/where-lilies-grew/the-stone-inside"
 				},
-				{ 
+				{
 					"title": "Remnants",
 					"lyrics": "/lyrics/where-lilies-grew/remnants"
 				},
-				{ 
+				{
 					"title": "Watcher",
 					"lyrics": "/lyrics/where-lilies-grew/watcher"
 				},
-				{ 
+				{
 					"title": "Spitting And Thrashing",
 					"lyrics": "/lyrics/where-lilies-grew/spitting-and-thrashing"
 				},
-				{ 
+				{
 					"title": "It Speaks",
 					"lyrics": "/lyrics/where-lilies-grew/it-speaks"
 				},
-				{ 
+				{
 					"title": "Earth Is Unmade",
 					"lyrics": "/lyrics/where-lilies-grew/earth-is-unmade"
 				},
-				{ 
+				{
 					"title": "Violent Age",
 					"lyrics": "/lyrics/where-lilies-grew/violent-age"
 				},
-				{ 
+				{
 					"title": "It Has A Name",
 					"lyrics": "/lyrics/where-lilies-grew/it-has-a-name"
 				},
-				{ 
+				{
 					"title": "Briar",
 					"lyrics": "/lyrics/where-lilies-grew/briar"
 				},
-				{ 
+				{
 					"title": "Fire At Last",
 					"lyrics": "/lyrics/where-lilies-grew/fire-at-last"
 				},
-				{ 
+				{
 					"title": "Succession",
 					"lyrics": "/lyrics/where-lilies-grew/succession"
 				}
@@ -280,11 +281,11 @@
 				}
 			],
 			"tracklist": [
-				{ 
+				{
 					"title": "Watercolour Sun // With Every Dress",
 					"lyrics": "/lyrics/the-autumn-bell/tracklist"
 				},
-				{ 
+				{
 					"title": "Chase The Moon",
 					"lyrics": "/lyrics/the-autumn-bell/chase-the-moon"
 				}
@@ -298,6 +299,7 @@
 			"attribution_link": "https://linktr.ee/nataliedombois",
 			"date": "2019-06-27T12:00",
 			"type": "Album",
+			"lyrics": "/lyrics/the-autumn-bell/tracklist",
 			"links": [
 				{
 					"title": "Bandcamp",
@@ -313,35 +315,35 @@
 				}
 			],
 			"tracklist": [
-				{ 
+				{
 					"title": "After The Wreck",
 					"lyrics": "/lyrics/the-autumn-bell/after-the-wreck"
 				},
-				{ 
+				{
 					"title": "Tidal Wave",
 					"lyrics": "/lyrics/the-autumn-bell/tidal-wave"
 				},
-				{ 
+				{
 					"title": "Negative Value",
 					"lyrics": "/lyrics/the-autumn-bell/negative-value"
 				},
-				{ 
+				{
 					"title": "With Every Dress",
 					"lyrics": "/lyrics/the-autumn-bell/with-every-dress"
 				},
-				{ 
+				{
 					"title": "In The Hospital",
 					"lyrics": "/lyrics/the-autumn-bell/in-the-hospital"
 				},
-				{ 
+				{
 					"title": "Waking Up",
 					"lyrics": "/lyrics/the-autumn-bell/waking-up"
 				},
-				{ 
+				{
 					"title": "Chase The Moon",
 					"lyrics": "/lyrics/the-autumn-bell/chase-the-moon"
 				},
-				{ 
+				{
 					"title": "Watercolour Sun",
 					"lyrics": "/lyrics/the-autumn-bell/watercolour-sun"
 				}
@@ -355,6 +357,7 @@
 			"attribution_link": "https://momus.ca/person/jacob-irish/",
 			"date": "2017-07-08T12:00",
 			"type": "Album",
+			"lyrics": "/lyrics/for-science/tracklist",
 			"links": [
 				{
 					"title": "Bandcamp",
