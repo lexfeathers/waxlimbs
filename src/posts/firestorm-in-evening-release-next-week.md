@@ -9,7 +9,7 @@ excerpt: We have a new single to announce!
 draft: false
 ---
 
-![Something gold poking out of black sand](/uploads/Misc/firestorm_cover_crop.jpg)
+![Something gold poking out of black sand](/uploads/Misc/Firestorm_cover_crop.jpg)
 
 ## Hello world,
 
