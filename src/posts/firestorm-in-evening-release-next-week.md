@@ -3,7 +3,7 @@ title: "'Firestorm In Evening' releases next week"
 author: Lex
 date: 2026-09-25T12:00
 tags: ['single']
-cover: /uploads/Misc/firestorm_cover_crop.jpg
+cover: /uploads/Misc/Firestorm_cover_crop.jpg
 show_table_of_contents: false
 excerpt: We have a new single to announce!
 draft: false
