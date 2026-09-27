@@ -29,6 +29,10 @@ layout: layout.vto
     <div class="separator"></div>
 {{ /if }}
 
-{{ await comp.LatestPosts({
-    count: 2
-}) }}
+{{ set recents = search.pages("type=post draft=false title!=", "published=desc") }}
+
+{{ if recents > 1 }}
+    {{ await comp.LatestPosts({
+        count: 2
+    }) }}
+{{ /if }}
