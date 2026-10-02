@@ -41,6 +41,30 @@
 	},
 	"releases": [
 		{
+			"title": "Firestorm In Evening",
+			"image_url": "/assets/images/covers/cover_FirestormInEvening.jpg",
+			"image_alt": "A gold bird skull mostly buried in black sand. The image is washed out and grainy.",
+			"image_attribution": "Lex Feathers",
+			"attribution_link": "https://lexfeathers.ca",
+			"date": "2026-10-02T12:00",
+			"type": "Single",
+			"links": [
+				{
+					"title": "Bandcamp",
+					"url": "https://waxlimbs.bandcamp.com/track/firestorm-in-evening"
+				},
+				{
+					"title": "Ampwall",
+					"url": "https://ampwall.com/a/waxlimbs/album/firestorm-in-evening"
+				},
+				{
+					"title": "Mirlo",
+					"url": "https://mirlo.space/waxlimbs/release/firestorm-in-evening"
+				}
+			],
+			"lyrics": "/lyrics/firestorm-in-evening/firestorm-in-evening"
+		},
+		{
 			"title": "By The Neck",
 			"image_url": "/assets/images/covers/cover_ByTheNeck.jpg",
 			"image_alt": "A white-on-black whispy birdlike pattern, with complex feather and bird skull motifs mixed in.",
