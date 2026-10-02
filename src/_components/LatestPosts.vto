@@ -6,7 +6,7 @@
 
  #}}
 
-{{ set latestPosts = search.pages("type=post draft=false", "published=desc", count) }}
+{{ set latestPosts = search.pages("type=post draft=false", "date=desc", count) }}
 
 {{ if latestPosts?.length > 1 }}
     <div class="latest-posts-container">
