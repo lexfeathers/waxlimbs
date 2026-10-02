@@ -839,7 +839,7 @@ a {
 }
 .card-post {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	margin: 2rem 0;
 
 	&:not(:last-of-type) {
