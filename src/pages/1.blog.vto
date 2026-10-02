@@ -2,7 +2,7 @@
 title: entries
 draft: false
 ---
-{{ set posts = search.pages("type=post draft=false", "order=desc")}}
+{{ set posts = search.pages("type=post draft=false", "date=desc")}}
 
 {{ if posts.length }}
 <p>Newest to oldest</p>
