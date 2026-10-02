@@ -844,7 +844,7 @@ a {
 
 	&:not(:last-of-type) {
 		padding-bottom: 2rem;
-		border-bottom: 1px solid var(--color-primary-fainter);
+		border-bottom: 1px solid var(--color-primary-faintest);
 	}
 
 	.card-image__link {
