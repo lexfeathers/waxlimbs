@@ -438,7 +438,7 @@ h6 {
 
 .lyrics-item {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: unset;
 	align-items: center;
 }
 

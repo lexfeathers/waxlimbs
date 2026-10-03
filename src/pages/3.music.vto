@@ -63,7 +63,7 @@ draft: false
                                     <a href="{{ track.lyrics |> url }}" title="Lyrics">
                                         <span class="icon-lyrics"></span>
                                     </a>
-                                    {{ track.title }}{{ if track.lyrics?.length }}{{ /if }}
+                                    {{ if track.lyrics?.length }}<span class="lyrics-title">{{ track.title }}</span>{{ /if }}
                                 </li>
                             {{ /for }}
                         </ol>    
@@ -82,9 +82,12 @@ draft: false
 .release-item {
     display: flex;
     gap: calc(var(--spacing) * 4);
+    align-items: flex-start;
 
     &:not(:last-child) {
         margin-bottom: calc(var(--spacing) * 4);
+        padding-bottom: calc(var(--spacing) * 8);
+        border-bottom: 1px solid var(--color-primary-faintest);
     }
 
     figure {
@@ -102,6 +105,7 @@ draft: false
         h2 {
             display: flex;
             align-items: center;
+            margin-top: 0;
             gap: 1rem;
         }
 
