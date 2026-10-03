@@ -4,6 +4,7 @@
 
     image_url,
 	image_alt,
+	image_title,
 	image_caption,
 	image_attribution,
 	attribution_link,
@@ -16,7 +17,7 @@
 
 <div class="figure-{{ uuid }}">
 	<figure data-type="image">
-		<img src="{{image_url}}"{{ if image_alt }} alt="{{image_alt}}"{{ /if }} class="cover" loading="lazy">
+		<img src="{{image_url}}"{{ if image_alt }} alt="{{image_alt}}"{{ /if }}{{ if image_title }} title="{{ image_title }}"{{ /if }} class="cover" loading="lazy">
 		<figcaption>
 			{{ if image_caption }}
 				{{ image_caption |> md }}
