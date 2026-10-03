@@ -3,10 +3,11 @@
     Takes the following inputs:
 
     count // the number of posts displayed
+    url // the url of the page the component is rendered on
 
  #}}
 
-{{ set latestPosts = search.pages("type=post draft=false", "date=desc", count) }}
+{{ set latestPosts = search.pages(`type=post draft=false url!="${url}"`, "date=desc", count) }}
 
 {{ if latestPosts?.length }}
     <div class="latest-posts-container">
