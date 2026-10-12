@@ -9,10 +9,11 @@ import sitemap from 'lume/plugins/sitemap.ts';
 import date from 'lume/plugins/date.ts';
 import extractOrder from 'lume/plugins/extract_order.ts';
 import basePath from 'lume/plugins/base_path.ts';
-import footnote from 'npm:markdown-it-footnote@latest';
-import implicitFigures from 'npm:markdown-it-image-figures@latest';
+import footnote from 'npm:markdown-it-footnote@4.0.0';
+import implicitFigures from 'npm:markdown-it-image-figures@2.1.1';
 import resolveUrls from 'lume/plugins/resolve_urls.ts';
 import toc from 'lume/plugins/toc.ts';
+import { v4 as uuidv4 } from 'npm:uuid@14.0.3';
 
 // Pass options to markdown-it plugins
 const markdown = {
@@ -41,14 +42,21 @@ const site = lume(
 	}
 );
 
-site.use(icons({
-			folder: '/assets/icons',
-		}))
-	.use(esbuild({
-		options: {
-			minify: false, 
-		}		
-	}))
+site.data('uuidv4', function () {
+	return uuidv4();
+});
+site.use(
+	icons({
+		folder: '/assets/icons',
+	})
+)
+	.use(
+		esbuild({
+			options: {
+				minify: false,
+			},
+		})
+	)
 	.use(basePath())
 	.use(resolveUrls())
 	.use(slugify_urls())
@@ -90,12 +98,10 @@ site.use(icons({
 		})
 	);
 
-site.add('/assets')
-	.add('/uploads');
+site.add('/assets').add('/uploads');
 
-site.process([".html"], (pages) => {
+site.process(['.html'], (pages) => {
 	for (const page of pages) {
-
 		// Mark all external links
 		const externalLinks = page.document.querySelectorAll('a[href^="http"]');
 		externalLinks.forEach((link) => {
@@ -106,14 +112,20 @@ site.process([".html"], (pages) => {
 		// Set social icons
 		const socialIcons = page.document.querySelectorAll('.social-icon');
 		for (const icon of socialIcons) {
-			page.document.querySelectorAll('[data-icon=' + '"' + `${icon.getAttribute('data-icon')}` + '"]')
-			.forEach(icon => {
-				(icon as HTMLElement).setAttribute(
-					"style", `mask: var(--icon-${icon.getAttribute('data-icon')?.toLowerCase()})`
-				);
-			});
-		};
-
+			page.document
+				.querySelectorAll(
+					'[data-icon=' +
+						'"' +
+						`${icon.getAttribute('data-icon')}` +
+						'"]'
+				)
+				.forEach((icon) => {
+					(icon as HTMLElement).setAttribute(
+						'style',
+						`mask: var(--icon-${icon.getAttribute('data-icon')?.toLowerCase()})`
+					);
+				});
+		}
 	}
 });
 
