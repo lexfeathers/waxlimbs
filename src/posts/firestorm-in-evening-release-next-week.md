@@ -1,5 +1,5 @@
 ---
-title: "'Firestorm In Evening' releases next week"
+title: 'Firestorm In Evening releases next week'
 author: Lex
 date: 2026-09-25T12:00
 tags: ['single']

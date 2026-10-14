@@ -1,5 +1,5 @@
 ---
-title: "'Firestorm In Evening' out now"
+title: 'Firestorm In Evening out now'
 author: Lex
 date: 2026-10-02T12:00
 tags: ['single']
