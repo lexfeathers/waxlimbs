@@ -15,7 +15,7 @@ Hi friends, today marks the release of [Firestorm In Evening](https://waxlimbs.b
 
 'Firestorm In Evening' envisions the approach of a terrible and beautiful end, a journey through simultaneous grief for the future and the past.
 
-We'll have a few more for you before the release of the album, and we're looking forward to sharing them with you. In the meantime, we hope you enjoy this first song and the spaces it winds through.
+We'll have a few more for you before the release of the album, and we're looking forward to sharing them with you. In the meantime, we hope you enjoy this first song and the spaces it winds through. I've written a more in-depth and personal breakdown of the song [over on my website, as well.](https://lexfeathers.ca/posts/firestorm-in-evening-release)
 
 Much love, stay safe,
 
