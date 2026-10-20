@@ -26,7 +26,11 @@ layout: layout.vto
 </article>
 
 {{ if search.pages("type=post draft=false")?.length }}
-    <div class="separator"></div>
+    <div class="separator-container">
+        <div class="separator"></div>
+        <div class="separator"></div>
+        <div class="separator"></div>
+    </div>
 {{ /if }}
 
 {{ await comp.LatestPosts({
