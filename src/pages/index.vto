@@ -1,0 +1,10 @@
+---
+title: pages
+---
+
+<ul>
+    <li><a href="/">/</a></li>
+    {{ for page of search.pages("draft=false type!=post type!=lyrics", "title=asc") }}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    {{ /for }}
+</ul>
