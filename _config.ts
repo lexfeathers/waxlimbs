@@ -1,36 +1,20 @@
-import lume from 'lume/mod.ts';
-import icons from 'lume/plugins/icons.ts';
-import esbuild from 'lume/plugins/esbuild.ts';
-import slugify_urls from 'lume/plugins/slugify_urls.ts';
-import favicon from 'lume/plugins/favicon.ts';
-import metas from 'lume/plugins/metas.ts';
-import feed from 'lume/plugins/feed.ts';
-import sitemap from 'lume/plugins/sitemap.ts';
-import date from 'lume/plugins/date.ts';
-import extractOrder from 'lume/plugins/extract_order.ts';
-import basePath from 'lume/plugins/base_path.ts';
-import footnote from 'npm:markdown-it-footnote@4.0.0';
-import implicitFigures from 'npm:markdown-it-image-figures@2.1.1';
-import resolveUrls from 'lume/plugins/resolve_urls.ts';
-import toc from 'lume/plugins/toc.ts';
-import { v4 as uuidv4 } from 'npm:uuid@14.0.3';
-
-// Pass options to markdown-it plugins
-const markdown = {
-	plugins: [
-		footnote,
-		[
-			implicitFigures,
-			{
-				dataType: true,
-				lazy: true,
-				async: true,
-				figcaption: 'alt',
-				link: false,
-			},
-		],
-	],
-};
+import lume from '@lumeland/lume';
+import icons from '@lumeland/plugin-icons';
+import esbuild from '@lumeland/plugin-esbuild';
+import slugify_urls from '@lumeland/plugin-slugify-urls';
+import favicon from '@lumeland/plugin-favicon';
+import metas from '@lumeland/plugin-metas';
+import feed from '@lumeland/plugin-feed';
+import sitemap from '@lumeland/plugin-sitemap';
+import date from '@lumeland/plugin-date';
+import extractOrder from '@lumeland/plugin-extract-order';
+import basePath from '@lumeland/plugin-base-path';
+import footnote from 'markdown-it-footnote';
+// @ts-expect-error no types for markdown-it-implicit-figures
+import implicitFigures from 'markdown-it-implicit-figures';
+import resolveUrls from '@lumeland/plugin-resolve-urls';
+import toc from '@lumeland/plugin-toc';
+import { v4 as uuidv4 } from 'uuid';
 
 const site = lume(
 	{
@@ -38,13 +22,28 @@ const site = lume(
 		location: new URL('https://waxlimbs.com'),
 	},
 	{
-		markdown,
+		markdown: {
+			plugins: [
+				footnote,
+				[
+					implicitFigures,
+					{
+						dataType: true,
+						lazy: true,
+						async: true,
+						figcaption: 'alt',
+						link: false,
+					},
+				],
+			],
+		},
 	}
 );
 
 site.data('uuidv4', function () {
 	return uuidv4();
 });
+
 site.use(
 	icons({
 		folder: '/assets/icons',
