@@ -10,6 +10,7 @@ import date from '@lumeland/plugin-date';
 import extractOrder from '@lumeland/plugin-extract-order';
 import basePath from '@lumeland/plugin-base-path';
 import footnote from 'markdown-it-footnote';
+// @ts-expect-error no types for markdown-it-implicit-figures
 import implicitFigures from 'markdown-it-implicit-figures';
 import resolveUrls from '@lumeland/plugin-resolve-urls';
 import toc from '@lumeland/plugin-toc';
