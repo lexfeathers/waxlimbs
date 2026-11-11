@@ -57,7 +57,7 @@
 		--color-primary: #141414;
 		--color-background: #fffae8;
 		--color-secondary: #e8005d;
-		--color-tertiary: #00ab94;
+		--color-tertiary: #FFa500;
 		--color-primary-faint: color-mix(
 			in srgb,
 			var(--color-primary),
