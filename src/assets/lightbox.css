@@ -41,6 +41,10 @@ figure:has(.lightbox) {
 		@media (prefers-color-scheme: light) {
 			background-color: var(--color-background);
 		}
+
+		&:hover {
+			background-color: var(--color-secondary);
+		}
 	}
 
 	img.lightbox {
