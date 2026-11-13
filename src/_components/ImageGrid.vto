@@ -53,14 +53,13 @@
     display: grid;
     grid-template-columns: repeat({{ columns }}, 1fr);
 
-    .grid-item, 
-    .grid-item a {
+    .grid-item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         max-width: 100%;
-        height: 100%;
+        max-height: 100%;
         overflow: hidden;
         aspect-ratio: 1/1;
         margin: 0;
@@ -73,13 +72,20 @@
         }
 
         a:has(img.lightbox) {
+            max-width: 100%;
+            max-height: 100%;
+            overflow: hidden;
+
             &:hover {
                 box-shadow: none;
-            };
+            }
         }
 
         a:has(img:not(.lightbox)) {
             min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
             img {
                 transition: 0.2s ease-out;
@@ -93,7 +99,7 @@
             }
         }
 
-        figcaption:not(img.lightbox + figcaption) {
+        figcaption:not(a:has(img.lightbox) + figcaption) {
             display: none;
         }
     }

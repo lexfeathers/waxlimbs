@@ -29,9 +29,7 @@ figure:has(.lightbox) {
 	img.lightbox {
 		object-fit: contain;
 		box-shadow: none;
-		width: 100%;
 		height: 100%;
-		flex: 1 1;
 		cursor: zoom-out;
 	}
 
