@@ -11,6 +11,9 @@ function getImages() {
 
 	images.forEach((image, index) => {
 		image.id = `image-lightbox-${index}`;
+		image.parentElement?.addEventListener('click', (e) => {
+			e.preventDefault();
+		});
 		image.addEventListener('click', lightbox);
 	});
 }

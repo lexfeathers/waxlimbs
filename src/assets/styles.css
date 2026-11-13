@@ -265,7 +265,10 @@ figure {
 
 img {
 	width: 100%;
-	border-radius: var(--spacing);
+
+	&:not(.grid-item a img) {
+		border-radius: var(--spacing);
+	}
 }
 
 blockquote {

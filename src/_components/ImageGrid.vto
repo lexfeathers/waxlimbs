@@ -20,7 +20,9 @@
   {{# Loop through each provided grid-item in the grid array #}}
   {{ for item of grid }}
   <figure data-type="image" class="grid-item shadow-hover">
-    <img src="{{ item.image_url }}" alt="{{ item.image_alt }}">
+    <a href="{{ item.image_url }}">
+        <img src="{{ item.image_url }}" alt="{{ item.image_alt }}">
+    </a>
     <figcaption>
         {{ if item.image_caption }}
             {{ item.image_caption |> md }}
@@ -51,7 +53,8 @@
     display: grid;
     grid-template-columns: repeat({{ columns }}, 1fr);
 
-    .grid-item {
+    .grid-item, 
+    .grid-item a {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -63,20 +66,24 @@
         margin: 0;
         transition: .2s;
         transition-property: box-shadow;
+        border-radius: var(--spacing);
 
         &:hover {
             box-shadow: 0px 0px 3rem -2.5rem var(--color-primary);
         }
 
-        img:not(.lightbox) {
-            object-fit: cover;
+        a:has(img:not(.lightbox)) {
             min-height: 100%;
-            transition: 0.2s ease-out;
-            transition-property: scale;
-            cursor: pointer;
 
-            &:hover {
-                scale: 101%;
+            img {
+                transition: 0.2s ease-out;
+                transition-property: scale;
+                object-fit: cover;
+                min-height: 100%;
+                
+                &:hover {
+                    scale: 101%;
+                }
             }
         }
 
