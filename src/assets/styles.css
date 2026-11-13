@@ -57,7 +57,7 @@
 		--color-primary: #141414;
 		--color-background: #fffae8;
 		--color-secondary: #e8005d;
-		--color-tertiary: #00ab94;
+		--color-tertiary: #FFa500;
 		--color-primary-faint: color-mix(
 			in srgb,
 			var(--color-primary),
@@ -119,12 +119,14 @@ html {
 
 	.separator:first-child,
 	.separator:last-child {
-		height: 1.75rem;
-		width: 1.75rem;
+		margin: auto 0;
+		height: 1px;
+		width: 100%;
+		mask: none;
 	}
 
 	.separator {
-		width: 2.5rem;
+		width: 12rem;
 		height: 2.5rem;
 		margin: 2rem 0;
 		mask: var(--icon-separator);
