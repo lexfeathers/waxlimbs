@@ -25,7 +25,6 @@
         <img src="{{ item.image_url }}" alt="{{ item.image_alt }}" loading="lazy">
         <div class="button-lightbox button-next"></div>
     </a>
-    <div class="button-lightbox-close"></div>
     <figcaption>
         {{ if item.image_caption }}
             {{ item.image_caption |> md }}
@@ -45,6 +44,7 @@
             </span>
         {{ /if }}
     </figcaption>
+    <div class="button-lightbox-close"></div>
 
   </figure>
   {{ /for }}
