@@ -57,7 +57,7 @@
 		--color-primary: #141414;
 		--color-background: #fffae8;
 		--color-secondary: #e8005d;
-		--color-tertiary: #FFa500;
+		--color-tertiary: #ffa500;
 		--color-primary-faint: color-mix(
 			in srgb,
 			var(--color-primary),
@@ -505,6 +505,10 @@ iframe[src*='bandcamp.com'] {
 	display: block;
 	margin: auto;
 	image-rendering: pixelated;
+	content: light-dark(
+		url('/assets/images/wordmark_black.png'),
+		url('/assets/images/wordmark_white.png')
+	);
 
 	@media (width <= 749px) {
 		width: 60%;
