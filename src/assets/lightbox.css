@@ -26,6 +26,23 @@ figure:has(.lightbox) {
 	bottom: 0;
 	left: 0;
 
+	.button-lightbox-close {
+		content: ''; /* masking to an svg */
+		position: fixed;
+		top: 1rem;
+		right: 1rem;
+		width: 3rem;
+		aspect-ratio: 1;
+		mask: var(--icon-close) center no-repeat;
+		background-color: var(--color-primary);
+		cursor: pointer;
+		z-index: 999;
+
+		@media (prefers-color-scheme: light) {
+			background-color: var(--color-background);
+		}
+	}
+
 	img.lightbox {
 		object-fit: contain;
 		box-shadow: none;
@@ -50,29 +67,14 @@ figure:has(.lightbox) {
 @media (width <= 749px) {
 	figure:has(.lightbox) {
 		padding: calc(var(--spacing) * 2);
+		height: 100%;
 
 		figcaption {
 			text-align: left;
 		}
 
-		&::after {
-			content: ''; /* masking to an svg */
-			position: absolute;
-			top: 1rem;
-			right: 1rem;
+		.button-lightbox-close {
 			width: 2rem;
-			height: 2rem;
-			opacity: var(--translucent);
-			mask: var(--icon-close);
-			mask-position: center;
-			mask-repeat: no-repeat;
-			background-color: var(--color-primary-faint);
-			color: white;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			border-radius: 2rem;
-			pointer-events: none;
 		}
 	}
 
