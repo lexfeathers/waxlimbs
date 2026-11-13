@@ -516,7 +516,10 @@ iframe[src*='bandcamp.com'] {
 }
 
 #logo {
-	mask: var(--logo);
+	mask: light-dark(
+		url('/assets/icons/Mask_Stroke_Black_Medium.svg'),
+		var(--logo)
+	);
 
 	@media (width <= 749px) {
 		mask: var(--logo_mobile);
