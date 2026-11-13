@@ -37,7 +37,8 @@ document.addEventListener('keydown', function (event) {
 
 		if (currentLightbox == null) return;
 
-		const imageGrid = currentLightbox.parentElement?.parentElement;
+		const imageGrid =
+			currentLightbox.parentElement?.parentElement?.parentElement;
 
 		if (
 			imageGrid?.attributes.getNamedItem('data-type')?.value !=
