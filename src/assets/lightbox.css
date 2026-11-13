@@ -2,7 +2,7 @@ body:has(*.lightbox) {
 	overflow: hidden;
 }
 
-[data-type='image'] > img:not(.lightbox) {
+[data-type='image'] > a > img:not(.lightbox) {
 	transition: 0.1s;
 	cursor: zoom-in;
 
