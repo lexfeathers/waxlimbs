@@ -21,7 +21,9 @@
   {{ for item of grid }}
   <figure data-type="image" class="grid-item shadow-hover">
     <a href="{{ item.image_url }}">
+        <div class="button-lightbox button-previous"></div>
         <img src="{{ item.image_url }}" alt="{{ item.image_alt }}" loading="lazy">
+        <div class="button-lightbox button-next"></div>
     </a>
     <figcaption>
         {{ if item.image_caption }}
@@ -100,6 +102,10 @@
         }
 
         figcaption:not(a:has(img.lightbox) + figcaption) {
+            display: none;
+        }
+
+        .button-lightbox:has(+ img.lightbox) {
             display: none;
         }
     }
